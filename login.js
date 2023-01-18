@@ -49,7 +49,7 @@ document.getElementById('sginin').addEventListener('click',()=>{
     let verify= verifyUser(data);
     if(verify){
       alert("ok done")
-      // window.location.href="./index.html"
+      window.location.href="./index.html"
     }else{
       alert('wrong cred!................')
     }
