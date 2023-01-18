@@ -1,0 +1,132 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 97%;
+    margin: auto;
+}
+
+ #top{
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+ }
+ .h2{
+    height: fit-content;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ .para{
+    text-align: center;
+    width: 28%;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ .result{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+ }
+ #grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+ }
+ .men{
+    position: relative;
+
+ }
+ .men img:hover{
+   width: 102%;
+ }
+
+ .men img{
+    width: 100%;
+    height: fit-content;
+    display: block;
+ }
+ .mens img{
+   width: 100%;
+    height: 385px;
+    display: block;
+ }
+ .mens img:hover{
+   width: 102%;
+ }
+ @media all and (min-width:100px) and (max-width:1500px){
+   #grid{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-auto-rows: auto;
+      gap: 10px;
+      margin: auto;
+   }
+   .mens img{
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+ }
+ #product{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-auto-rows:auto;
+   gap: 8px;
+ }
+ #product img{
+   width: 100%;
+
+ }
+ #product>div{
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ }
+ @media all and (min-width:200px) and (max-width:600px){
+   #product{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-auto-rows:auto;
+      gap: 8px;
+    }
+    #product img{
+      width: 100%;
+   
+    }
+    #product div{
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      background-color: brown;
+
+    }
+    .para{
+      text-align: center;
+      width: 90%;
+      margin: auto;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+ }
+ @media all and (min-width:601px) and (max-width:1200px){
+   #product{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-auto-rows:auto;
+      gap: 8px;
+    }
+    #product img{
+      width: 100%;
+   
+    }
+    #product>div{
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .para{
+      text-align: center;
+      width: 50%;
+      margin: auto;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+ }
