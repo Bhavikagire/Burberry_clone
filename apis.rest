@@ -1,0 +1,65 @@
+### GET all data
+GET https://bb-nwfw.onrender.com/
+
+### GET all users
+
+GET https://bb-nwfw.onrender.com/Users
+
+### Register a new user
+POST https://bb-nwfw.onrender.com/Users/
+Content-Type: application/json
+
+{
+  "id": 11,
+    "location": "India",
+    "title": "Mr",
+    "fname": "ABC",
+    "lname": "Th",
+    "mobile": "99999499",
+    "email": "gattar0@ehow.com",
+    "pass": "AB15"
+}
+
+### Log in an existing user
+
+POST https://bb-nwfw.onrender.com/Users/
+
+Content-Type: application/json
+Authorization: Bearer < token>
+
+{
+  "username": "xyz",
+  "password": "Lmn"
+}
+
+### access a user data 
+GET https://bb-nwfw.onrender.com/Users?id=1
+
+
+
+### GET all products
+
+GET https://bb-nwfw.onrender.com/Products
+
+### GET all Men
+
+GET https://bb-nwfw.onrender.com/Men
+
+### GET all Women
+
+GET https://bb-nwfw.onrender.com/Women
+
+
+### GET all Gifts
+
+GET https://bb-nwfw.onrender.com/Gifts
+
+### GET all NewIn
+
+GET https://bb-nwfw.onrender.com/NewIn
+
+
+### GET all order_details/order history
+
+GET https://bb-nwfw.onrender.com/order_details
+
