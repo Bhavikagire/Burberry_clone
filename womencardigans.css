@@ -1,0 +1,113 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.heading{
+ width: 30%;
+ margin: auto;
+ text-align: center;
+}
+.cardigantag{
+    text-align: center;
+    margin: 70px;
+}
+.product_div{
+    display: flex;
+}
+
+.product_card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 3Px;
+    text-align: center;
+}
+.product_card img{
+    width: 100%;
+}
+
+.skirtspro{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 3Px;
+    text-align: center;
+}
+.skirtspro img{
+    width: 100%;
+}
+#button1{
+    width: 250px;
+    height: 40px;
+   background-color: white;
+}
+#btndiv{
+    text-align: center;
+    width: 10%;
+    margin: auto;
+   margin-right: 650px;
+    padding: 30px;
+    padding-bottom: 100px;
+   
+   
+}
+#button1:hover{
+    background-color: black;
+    color: white;
+}
+
+.shirtpro{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.shirtdata{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 1Px;
+    text-align: center;
+    width: 63%;
+}
+.shirtdata img{
+    width: 100%;
+}
+.shirtimg-img{
+    width: 490px;
+    height: 953px;
+}
+.shirtpro{
+    margin-top: 70px;
+}
+ .bags{
+    text-align: center;
+    margin: 70px;
+ }
+.bagsdata{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 1Px;
+    text-align: center;
+    width: 100%;
+}
+.bagsdata img{
+    width: 100%;
+}
+.rendom{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    text-align: center;
+    margin: 60px;
+}
+.rendom img{
+    width: 100%;
+}
+.rendom button{
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
