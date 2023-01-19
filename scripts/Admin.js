@@ -210,33 +210,33 @@ const removeProduct = async (id, cat) => {
 //Handling category Buttons
 
 let cat_btns = document.querySelectorAll(".cat_btn");
-//skincare Products
+//Men Products
 
-let skincare = document.getElementById("skin_btn");
-skincare.onclick = () => {
+let Men = document.getElementById("Men_btn");
+Men.onclick = () => {
   deactiveLinks(cat_btns);
-  skincare.classList.add("link_active");
+  Men.classList.add("link_active");
   getProductData("Men");
 };
-//fragrance products
-let fragrance = document.getElementById("frag_btn");
-fragrance.onclick = () => {
+//Women products
+let Women = document.getElementById("Women_btn");
+Women.onclick = () => {
   deactiveLinks(cat_btns);
-  fragrance.classList.add("link_active");
+  Women.classList.add("link_active");
   getProductData("Women");
 };
-//hair products
-let hair = document.getElementById("hair_btn");
-hair.onclick = () => {
+//Gifts products
+let Gifts = document.getElementById("Gifts_btn");
+Gifts.onclick = () => {
   deactiveLinks(cat_btns);
-  hair.classList.add("link_active");
+  Gifts.classList.add("link_active");
   getProductData("Gifts");
 };
-//lipstick products
-let lipstick = document.getElementById("lip_btn");
-lipstick.onclick = () => {
+//NewIn products
+let NewIn = document.getElementById("NewIn_btn");
+NewIn.onclick = () => {
   deactiveLinks(cat_btns);
-  lipstick.classList.add("link_active");
+  NewIn.classList.add("link_active");
   getProductData("NewIn");
 };
 
@@ -339,7 +339,7 @@ admin_logout.onclick = () => {
   textTospeech("Good bye gauri")
   location.href = "./AdminLogin.html";
 };
-//console.log(admin_login[1]);
+//console.log(Gauri);
 function textTospeech (text) {
     let utternance = new SpeechSynthesisUtterance(text);
     utternance.voice = window.speechSynthesis.getVoices()[3] ;

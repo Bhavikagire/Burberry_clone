@@ -58,7 +58,7 @@ addNewProducts.onclick = async () => {
     },
   });
   alert("Product Added");
-  category.value = "";
+  category.value ="Add Product To";
   ProdId.value = "";
   ProdImage.value = "";
   ProdPimage.value = "";
