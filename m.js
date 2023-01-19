@@ -1,5 +1,5 @@
-let container = document.getElementById("women");
-fetch ("https://bb-nwfw.onrender.com/NewIn")
+let container = document.getElementById("men");
+fetch ("https://bb-nwfw.onrender.com/Men")
 
   .then((res) => {
     return res.json();
@@ -34,8 +34,10 @@ function Product(data) {
     let type = document.createElement("h4");
     type.innerText = element.Ptype;
 
-    box.append(image, name, desc, price, cate,type);
+    let quantity = document.createElement("h5");
+    type.innerText = element.quantity;
+
+    box.append(image, name, desc, price, cate,type,quantity);
     container.append(box);
   });
 }
-
