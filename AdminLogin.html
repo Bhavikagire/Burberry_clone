@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fw20_0095 -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blueberry Admin Login</title>
-</head>
-<body>
+    <link rel="shortcut icon" type="image/x-icon" href="#">
     
-</body>
+    <link rel="stylesheet" href="./styles/Admin_login.css" />
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="Login-body">
+      <div id="Admin-Logo">
+        <img src="https://assets.burberry.com/is/image/Burberryltd/MyAccount.jpg?$BBY_V2_BASIC$&wid=1349&hei=270" alt="login-admin" />
+      </div>
+      <h1>Welcome!</h1>
+      <p>It's great to see you</p>
+      <p id="secPtag">Log in to your account below</p>
+      <div id="Main-Login">
+        <input type="email" id="email" placeholder="Email..." required />
+        <input
+          type="password"
+          id="password"
+          placeholder="Password..."
+          required
+        />
+        <button id="submit">Continue</button>
+        <button id="resetPassword">Reset password</button>
+      </div>
+    </div>
+  </body>
 </html>
+<script src="./scripts/AdminLogin.js"></script>
