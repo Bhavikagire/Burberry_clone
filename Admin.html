@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fw20_0095 -->
+    <link rel="stylesheet" href="./styles/Admin.css" />
+    <link rel="stylesheet" href="./styles/modal-popup.css" />
+    <title>Blueberry Admin Dashboard</title>
+    <style>
+    
+       div, button{
+        border-color:  rgba(53, 47, 47, 0.374) !important;
+        
+      }
+
+      #icons_div {
+        font-size: 25px;
+        cursor: pointer;
+      }
+
+     #rhs img{
+        /* filter: invert(0) !important; */
+        filter: none !important;
+       
+
+      }  
+
+    </style>
+  </head>
+  <body>
+    <div id="invertDiv"></div>
+    <div id="main_container">
+      <div id="lhs">
+        <div id="title_div">
+          <div id="logo">
+            <img style="width: 150px;" src="./img/blueberry-high-resolution-logo-black-on-transparent-background__1_-removebg-preview.png" alt="logo" />
+          </div>
+          <!-- <h4>BB</h4> -->
+        </div>
+        <div id="link_div">
+          <div id="products_div" class="link_item link_active">
+            <i class="fa-solid fa-tags"></i>
+            <p>Products</p>
+          </div>
+          <div id="orders_div" class="link_item">
+            <i class="fa-solid fa-indian-rupee-sign"></i>
+            <p>Orders</p>
+          </div>
+          <div id="customers_div" class="link_item">
+            <i class="fa-solid fa-user"></i>
+            <p>Customers</p>
+          </div>
+        </div>
+      </div>
+      <div id="rhs">
+        <div id="navbar">
+          <!-- login icon -->
+          <div id="admin_icon_div">
+            G
+            <div id="admin_details">
+              <div id="admin_email_div">
+                <i class="fa-regular fa-user"></i>
+                <p></p>
+                
+                <!-- <span>Gauri Bidwai</span> -->
+              </div>
+              <div id="admin_logout_div">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <p>Logout</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="rhs_body">
+          <div id="products_page" class="page active">
+            <div class="header">
+              <h4>Products</h4>
+              <button class="btn add_product">New Product</button>
+              <div class="modal myModal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <select id="new_prod_category">
+                      <option id="addTo" value="addTo">Add Product To</option>
+                      <option id="addTo_men" value="Men"> Men</option>
+                      <option id="addTo_women" value="Women"> Women</option>
+                      <option id="addTo_Gifts" value="Gifts"> Gifts</option>
+                      <option id="addTo_products" value="Product"> Product/NewIn</option>
+                   
+                  </select> 
+                 
+
+                  <input type="number" 
+                  placeholder="Enter Product Id" 
+                  id="new_prod_id" required/>
+
+                 
+                  <input
+                    type="text"
+                    id="new_prod_img"
+                    placeholder="Enter Image URL"
+                    required
+                  />
+                  <input
+                  type="text"
+                  id="new_prod_Pimage"
+                  placeholder="Enter Pimages URL"
+                  required
+                />
+
+                <input
+                type="text"
+                id="new_prod_name"
+                placeholder="Enter Product Name"
+                required
+              />
+
+              <input
+              type="text"
+              id="new_prod_description"
+              placeholder="Enter Product Description"
+              required
+            />
+                  <input
+                    type="number"
+                    id="new_prod_price"
+                    placeholder="Enter Product Price"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="new_prod_type"
+                    placeholder="Enter Product Type"
+                    required
+                  />
+
+                  <input
+                    type="number"
+                    id="new_prod_quantity"
+                    placeholder="Enter Product Quantity"
+                    required
+                  />
+                 
+                  <button id="add_new_product">Add Product</button>
+                </div>
+              </div>
+            </div>
+            <div class="action_div">
+              <div>
+                <button class="btn cat_btn link_active" id="Men_btn">Men </button>
+                <button class="btn cat_btn" id="Women_btn">Women </button>
+                <button class="btn cat_btn" id="Gifts_btn">Gift</button>
+                <button class="btn cat_btn" id="NewIn_btn"> Product/NewIn</button>
+               
+              </div>
+              <div>
+                <select id="filter_Prod" class="btn">
+                  <option value="">Filter By Type</option>
+                  <option value="shoes">shoes</option>
+                  <option value="shirts">shirts</option>
+                  <option value="skirts">skirts</option>
+                  <option value="bags">bags</option>
+                  <option value="Sweater">Sweater</option>
+                  <option value="Wallet">Wallet</option>
+                  <option value="coat">coat</option>
+                  <option value="Scarf">Scarf</option>
+                  <option value="cap">cap</option>
+                  <option value="Jackets">Jackets</option>
+                  <option value="Shorts">Shorts</option>
+                  <option value="Pants">Pants</option>
+                </select>
+                <select id="sort_Prod" class="btn">
+                  <option value="">Sort By</option>
+                  <option value="asc">Low To High</option>
+                  <option value="desc">High To Low</option>
+                </select>
+              </div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Type</th>
+                  <th>Status</th>
+                  <th>Quantity</th>
+                  <th>Remove</th>
+                </tr>
+              </thead>
+              <tbody id="product_tbody">
+                <!-- items row comes here -->
+              </tbody>
+            </table>
+          </div>
+
+          <div id="orders_page" class="page">
+            <!-- *********************************** -->
+
+           <!-- *********************************** -->
+          </div>
+
+          <div id="customers_page" class="page">
+            <h4>Customers</h4>
+            <!-- ******************************* -->
+           
+            <!-- ******************************* -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+ 
+</html>
+
+<script type="module" src="./scripts/Admin.js"></script>
+<script type="module" src="./scripts/modal-popup.js"></script>
