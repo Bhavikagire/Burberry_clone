@@ -26,11 +26,11 @@ const getProductData = async (cat) => {
     let data = await res.json();
 
    // console.log(data);
-    appendProducts(data, cat);
-  } catch (err) {console.log(err)}
+    appendProducts(data,cat);
+  } catch (err){console.log(err)}
 };
 window.onload=()=>{
-  getProductData("Women");
+  getProductData("Men");
 }
 
 
@@ -42,13 +42,15 @@ const appendProducts = (data, cat) => {
     let img_td = document.createElement("td");
     let img = document.createElement("img");
     img.className = "pic"
-    img.src =images[0],images[1] ;
+    // img.src =images[0],images[1] ;
+    img.src =images[1];
     img_td.append(img);
 
     let pimg_td = document.createElement("td");
     let pimg = document.createElement("img");
     pimg.className = "pic2"
-    pimg.src = Pimages[0],Pimages[1],Pimages[2],Pimages[3] ;
+    // pimg.src = Pimages[0],Pimages[1],Pimages[2],Pimages[3] ;
+    pimg.src = Pimages[1];
     pimg_td.append(pimg);
 
     let name = document.createElement("td");
@@ -264,6 +266,15 @@ filter_Prods.onchange = () => {
   }else if (inputVal == "cap") {
     handle_filter("Ptype", "cap");
   }
+  else if (inputVal == "Jackets") {
+    handle_filter("Ptype", "Jackets");
+  }
+  else if (inputVal == "Shorts") {
+    handle_filter("Ptype", "Shorts");
+  }
+  else if (inputVal == "Pants") {
+    handle_filter("Ptype", "Pants");
+  }
 
 
 
@@ -320,7 +331,7 @@ document.addEventListener("click", function (event) {
 });
 
 let admin_email_display = document.querySelector("#admin_email_div>p");
- admin_email_display.innerText = admin_login[0];
+ admin_email_display.innerText=admin_login[0];
 
 let admin_logout = document.querySelector("#admin_logout_div>p");
 admin_logout.onclick = () => {
@@ -329,10 +340,6 @@ admin_logout.onclick = () => {
   location.href = "./AdminLogin.html";
 };
 //console.log(admin_login[1]);
-
-
-
-
 function textTospeech (text) {
     let utternance = new SpeechSynthesisUtterance(text);
     utternance.voice = window.speechSynthesis.getVoices()[3] ;
