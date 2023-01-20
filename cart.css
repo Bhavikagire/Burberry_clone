@@ -1,0 +1,102 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    margin-top: 5px;
+    margin-left: 30%;
+    width: 400px;
+    height: 50px;
+}
+.pay{
+    width: 99%;
+}
+.nav{
+    margin-top: 4%;
+    display: flex;
+}
+.span-line{
+    margin: 2% 40% 0%;
+}
+.main{
+    display: flex;
+    width: 90%;
+    padding: 3%;
+    margin: auto;
+    margin-top: 50px;
+}
+#product-dom{
+    width: 80%;
+    
+    margin: 20px;
+    
+}
+.overviev{
+    width: 40%;
+    background-color: rgb(246, 246, 246);
+    padding: 0% 2%;
+    margin: 0px 5%;
+}
+.over-div{
+    display: flex;
+    justify-content: space-between;
+}
+.checkout{
+    display: block;
+    width: 99%;
+    height: 40px;
+    margin: auto;
+    margin: 20px 0px;
+    background-color: black;
+    color: white;
+}
+.paypal{
+    display: block;
+    width: 99%;
+    height: 40px;
+    margin: auto;
+    margin: 20px 0px;
+    background-color: rgb(255, 255, 255);
+}
+.paypal > img{
+    width: 40%;
+    height: 90%;
+}
+
+.pdiv{
+    display: flex;
+    margin: 1% 0%;
+    background-color: rgb(246, 246, 246);
+}
+.idiv{
+    width: 40%;
+    margin-right: 20px;
+}
+.idiv > img{
+    width: 100%;
+    height: 99%;
+}
+.ddiv{
+    margin: auto;
+}
+.ddiv p{
+    margin-left: 20%;
+}
+.ddiv h4{
+    margin-left: 20%;
+}
+.ddiv button{
+    width: 70%;
+    margin-left: 20%;
+}
+
+@media screen and (min-width: 480px) and (max-width:990px) {
+    .main{
+      flex-direction: column;
+    }
+    #product-dom{
+      width: 96%;
+      }
+      .overviev{
+      width: 96%;
+      }
+  }
