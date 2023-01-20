@@ -40,6 +40,10 @@
         return ele
       }
     })
+    let ressweater=Sweater.length
+    document.querySelector(".result").innerText=ressweater+" result"
+    console.log(ressweater)
+
     displaydataofpro(Sweater)
     console.log(Sweater);
     let shirts=data.filter((ele,ind)=>{
@@ -62,6 +66,8 @@ let bags=data.filter((ele,ind)=>{
       return ele
     }
     })
+let bagres=bags.length
+document.querySelector(".bagres").innerText=bagres+' result'
 displaydataofbags(bags)
 console.log(bags)
   }
@@ -109,7 +115,7 @@ function displaydataofpro(out) {
 
       let productimg = document.createElement("img");
       productimg.setAttribute("src", elem.images[0]      );
-
+       var css=""
       let title = document.createElement("h4")
       title.innerText = elem.title;
 

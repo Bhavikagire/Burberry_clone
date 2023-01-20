@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's New Arrivals</title>
+    <style>
+        #new_arrival{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            text-align: center;
+            gap: 2px;
+        }
+        img{
+            width: 100%;
+        }
+        
+.rendom{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    text-align: center;
+    margin: 60px;
+}
+.rendom img{
+    width: 100%;
+}
+.rendom button{
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.lasttag{
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.lastprat{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+ padding: 20px;
+}
+.lastprat a{
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+.lastprat a:hover{
+    color:#5c5959;
+}
+.result{
+    text-align: center;
+}
+.heading{
+    width: 30%;
+    text-align: center;
+    margin: auto;
+}
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>MEN’S NEW ARRIVALS</h1>
+        <h5>Introducing our men’s new season collection, from multifunctional outerwear to modern tailoring. Discover refreshed icons and seasonal Burberry Checks alongside new prints inspired by our heritage of exploration.</h5>
+    </div>
+    <hr>
+    <hr>
+    <p class="result"></p>
+    <div id="new_arrival">
+
+    </div>
+    <div class="rendom">
+        <div>
+            <img src="https://assets.burberry.com/is/image/Burberryltd/664862ED-E1E3-47F6-9BD7-F090B33997CC?$BBY_V2_ML_1x1$&wid=1251&hei=1251" alt="">
+            <h2>TRENCH COATS</h2>
+            <button> SHOP NOW</button>
+        </div>
+        <div>
+            <img src="https://assets.burberry.com/is/image/Burberryltd/B16C10A3-5C5D-4C54-8E51-3BD694FB304E?$BBY_V2_SL_1x1$&wid=1251&hei=1251" alt="">
+            <h2>BAGS
+            </h2>
+            <button> SHOP NOW</button>
+        </div>
+        <div>
+            <img src="https://assets.burberry.com/is/image/Burberryltd/E0FE7559-C5FD-43E0-BF89-D60B17803EFB?$BBY_V2_ML_1x1$&wid=1251&hei=1251" alt="">
+            <h2>UNMISTAKABLY BURBERRY</h2>
+            <button> SHOP NOW</button>
+        </div>
+    </div> 
+    <hr>
+    <div id="screenshirt">
+    <img src="img/Screenshot (327).png" alt="22">
+</div>
+<hr>
+    <h4 class="lasttag">MORE FOR YOU</h4>
+<div class="lastprat">
+    
+    <a href="">New In |</a>
+    <a href="">The Year of the Rabbit |</a>
+    <a href="">The Winter Edit |</a>
+    <a href="">Burberry Loves </a>
+    
+ </div>
+ <hr>
+</body>
+</html>
+<script>
+    let data=[]
+    let url = "https://bb-nwfw.onrender.com/Men";
+async function getdata() {
+  try {
+    let res = await fetch(url);
+    let out = await res.json();
+   
+    displaydataofpro(out);
+      console.log(out);
+      let result=out.length
+console.log(result)
+document.querySelector(".result").innerText=result+" result"
+  } catch (err) {
+    alert(err);
+  }
+
+}
+getdata()
+let result=data.length
+console.log(result)
+document.querySelector(".result").innerText="result "+result
+
+function displaydataofpro(out) {
+  // console.log(out);
+  document.querySelector("#new_arrival").innerHTML = "";
+  out.forEach((elem) => {
+    let div = document.createElement("div");
+
+
+
+    let productimg = document.createElement("img");
+    productimg.setAttribute("src", elem.images[0]      );
+
+    let title = document.createElement("h4")
+    title.innerText = elem.title;
+
+
+    let price = document.createElement("h4");
+    price.innerText = elem.price;
+
+
+
+
+
+    div.append(productimg,title,price)
+
+    document.querySelector("#new_arrival").append(div);
+
+  })
+
+}
+</script>

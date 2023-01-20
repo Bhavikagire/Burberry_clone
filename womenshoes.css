@@ -139,6 +139,7 @@ body{
     margin-top: 50px;
 }
 
+
 @media all and (min-width:400px) and (max-width:600px){
     .product_card{
         display: grid;
@@ -239,5 +240,3 @@ body{
             width: 100%;
         }
 }
-
-
