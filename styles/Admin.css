@@ -104,7 +104,10 @@ body {
   margin-bottom: 10px;
   /* justify-content: space-between; */
 }
+#admin_email_div span{
+  visibility: hidden;
 
+}
 #admin_logout_div {
   display: flex;
   /* justify-content: space-around; */

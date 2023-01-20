@@ -275,11 +275,6 @@ filter_Prods.onchange = () => {
   else if (inputVal == "Pants") {
     handle_filter("Ptype", "Pants");
   }
-
-
-
-
-
 };
 
 // Handling Filter main function
@@ -331,7 +326,7 @@ document.addEventListener("click", function (event) {
 });
 
 let admin_email_display = document.querySelector("#admin_email_div>p");
- admin_email_display.innerText=admin_login[0];
+ admin_email_display.innerText=admin_login[0] || document.querySelector("#admin_email_div>span").innerHTML ;
 
 let admin_logout = document.querySelector("#admin_logout_div>p");
 admin_logout.onclick = () => {
