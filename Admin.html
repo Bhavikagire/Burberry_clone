@@ -54,7 +54,7 @@
           </div>
           <div id="customers_div" class="link_item">
             <i class="fa-solid fa-user"></i>
-            <p>Customers</p>
+            <p>Customers/Users</p>
           </div>
         </div>
       </div>
@@ -202,14 +202,71 @@
 
           <div id="orders_page" class="page">
             <!-- *********************************** -->
-
+            <h4>Orders</h4>
+            <div class="action_div">
+              <div></div>
+              <div>
+                <!-- <select id="sort_cus" class="btn">
+                  <option value="">Sort By</option>
+                  <option value="asc">A-Z</option>
+                  <option value="desc">Z-A</option>
+                </select> -->
+              </div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Number</th>
+                  <th>Items</th>
+                  <th>Email Address</th>
+                  <th>Total Price</th>
+                
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody id="orders_tbody">
+                <!-- items row comes here -->
+              </tbody>
+            </table>
            <!-- *********************************** -->
           </div>
 
           <div id="customers_page" class="page">
-            <h4>Customers</h4>
+            <h4>Customers/Users</h4>
             <!-- ******************************* -->
-           
+            <div class="action_div">
+              <div>
+                <input
+                  type="text"
+                  id="search_user"
+                  class="btn"
+                  placeholder="Search User"
+                />
+                <button id="search_user_btn" class="btn">search</button>
+              </div>
+              <div></div>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Location</th>
+                  <th>Title</th>
+                  <th>Full Name</th>
+                  <th>Mobile No.</th>
+                  <th>Email</th>
+                  <th>Password</th>
+                  <th>Remove</th>
+                </tr>
+              </thead>
+              <tbody id="customer_tbody">
+                <!-- items row comes here -->
+              </tbody>
+            </table>
             <!-- ******************************* -->
           </div>
         </div>
@@ -221,3 +278,4 @@
 
 <script type="module" src="./scripts/Admin.js"></script>
 <script type="module" src="./scripts/modal-popup.js"></script>
+<script type="module" src="./scripts/user.js"></script>
