@@ -33,6 +33,20 @@
   .h3{
     text-align: center;
   }
+  #women button{
+    margin-left: 120px;
+    background-color: rgb(87, 86, 86);
+    border: none;
+    padding: 10px 10px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+
+  }
+  #women button:hover{
+    cursor: pointer;
+    background-color: rgb(168, 165, 165);
+  }
   #women{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -48,6 +62,10 @@
   #women>div{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding-bottom: 20px;
+  }
+  #women>div>img:hover{
+    cursor: pointer;
+    image-rendering: "https://assets.burberry.com/is/image/Burberryltd/CBF3DDF4-B33B-4C44-8CE7-5ED9D7C01261?$BBY_V2_ML_1x1$&wid=1876&hei=1876";
   }
   @media all and (min-width:200px) and (max-width:600px){
     #women{
@@ -92,3 +110,109 @@
        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
   }
+
+  footer {
+    font-family: 'Styrene', Helvetica, Arial, sans-serif;
+  }
+  #footdiv{
+    display: flex;
+  }
+  
+  #footdiv>div {
+    width: 30%;
+    margin: 30px 50px 20px;
+    padding: 20px;
+    font-size: 15px;
+  
+  }
+  
+  .foottext:hover {
+    color: gray;
+  }
+  
+  footer pre {
+    font-size: 18px;
+  }
+  
+  #footdiv>div>p:hover,
+  h3:hover {
+  
+    color: gray;
+  }
+  
+  .foottext {
+    margin: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .us_language_ship p {
+    color: gray;
+    font-size: 17px;
+  
+  }
+  
+  .us_language_ship p:hover {
+    color: rgb(51, 47, 47);
+  
+  }
+  
+  .us_language_ship {
+    margin-bottom: 35px;
+  }
+  
+  .footsummary {
+    font-size: 14px;
+    margin: 20px;
+    margin-left: 30px;
+    color: rgb(59, 58, 58);
+  }
+  
+  #footsign {
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #footsign+p {
+    color: rgb(59, 58, 58);
+  }
+  
+  #inputfooter {
+    border: none;
+    margin-top: 10px;
+    padding: 15px;
+    width: 88%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    font-size: 20px;
+  }
+  #bottompara {
+    margin: 20px 80px 10px;
+    color: gray;
+  }
+  
+  #bottompara span {
+    text-decoration: underline black;
+  
+  }
+  .hr > p {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    margin-top: 10px;
+  }
+  #flex {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+  #flex a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  

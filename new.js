@@ -34,7 +34,14 @@ function Product(data) {
     let type = document.createElement("h4");
     type.innerText = element.Ptype;
 
-    box.append(image, name, desc, price, cate,type);
+    let add_to_cart = document.createElement("button");
+    add_to_cart.innerText = "Add to Cart";
+
+    add_to_cart.onclick = function () {
+        addToCart(element);
+    }
+
+    box.append(image, name, desc, price, cate,type,add_to_cart);
     container.append(box);
   });
 }
