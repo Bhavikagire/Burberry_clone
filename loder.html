@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+   body {
+    background-color:rgb(247, 247, 247);
+    height:60vh;
+    width:90vw;
+    margin:0;
+    padding:0;
+    display:grid;
+    place-content:center;
+  }
+
+  #loader {
+    position:relative;
+        
+         
+    
+    
+    
+    
+          /*control for size*/
+          --size: 100px ;   
+    
+    
+    
+        --width: 300px;
+        --thickness: calc(var(--width) / 8);
+        
+        
+        /*control for duration of 1 loop*/
+        --duration: 2.5s;
+
+
+
+        width:var(--width);
+    aspect-ratio:1/1;
+    
+    transform:scale(0.30);
+  }
+  
+  #spinner-back {
+    
+
+    
+    position:absolute;
+    
+    width:var(--width);
+    aspect-ratio:1/1;
+    
+    border-radius:var(--width);
+    
+  
+    border:var(--thickness) solid black;
+    
+
+  }
+  
+  #spinner {
+    position:absolute;
+    top:0;
+    left:0;
+    width:var(--width);
+    aspect-ratio:1/1;
+    
+    border-radius:var(--width);
+    
+    border:var(--thickness) solid #ECEFF1;
+    border-right-color:transparent;
+
+ 
+    transform-origin:50% 50%;
+    
+    animation: spinner var(--duration) infinite ease-in-out;
+    
+    
+  }
+  
+  #spinner::before, #spinner::after {
+    content:"";
+    
+    position:absolute;
+    height:calc(var(--thickness));
+    aspect-ratio:1/1;
+    
+    top:calc(var(--thickness)*.4);
+    right:calc(var(--thickness)*.2);
+    
+    background-color:black;
+    
+    border-radius:var(--thickness);
+  }
+  
+  
+  #spinner::after {
+    top:unset;
+    bottom:calc(var(--thickness)*.4);
+  }
+  
+  
+  @keyframes spinner {
+    
+    100% {transform:  rotatez(2turn)}
+    
+    100% {transform:  rotatez(2turn)}
+    
+  
+  }
+  
+    </style>
+</head>
+<body>
+    <div id="loader">
+
+        <div id="spinner-back">
+            
+
+        </div>
+        <div id="spinner">
+        </div>
+        
+      </div>
+
+</body>
+<script>
+    let target = JSON.parse(localStorage.getItem('loder'))
+    // console.log(target);
+    setTimeout(()=>{
+        window.location.href=`./${target}`
+    },2500)
+</script>
+</html>
