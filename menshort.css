@@ -63,11 +63,11 @@ body{
 
 .shirtdata{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto;
     gap: 1Px;
     text-align: center;
-    width: 63%;
+    width: 100%;
 }
 .shirtdata img{
     width: 100%;
@@ -81,7 +81,7 @@ body{
 }
  .bags{
     text-align: center;
-    margin: 30px;
+    margin-bottom: -30px;
  }
  .bagres{
     text-align: center;
@@ -136,8 +136,8 @@ body{
 }
 .result{
     text-align: center;
-    margin-top: 50px;
 }
+
 
 @media all and (min-width:400px) and (max-width:600px){
     .product_card{
@@ -239,5 +239,3 @@ body{
             width: 100%;
         }
 }
-
-
