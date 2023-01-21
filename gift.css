@@ -171,8 +171,6 @@ footer {
 }
 #footdiv{
   display: flex;
- 
-  border:1px dotted red;
 }
 /* @media all and (min-width:200px) and (max-width:600px){
   #footdiv{
