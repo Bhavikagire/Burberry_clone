@@ -18,26 +18,15 @@
 
   #loader {
     position:relative;
-        
-         
-    
-    
-    
-    
           /*control for size*/
           --size: 100px ;   
-    
-    
-    
+
         --width: 300px;
         --thickness: calc(var(--width) / 8);
         
         
         /*control for duration of 1 loop*/
         --duration: 2.5s;
-
-
-
         width:var(--width);
     aspect-ratio:1/1;
     
@@ -118,8 +107,6 @@
     <div id="loader">
 
         <div id="spinner-back">
-            
-
         </div>
         <div id="spinner">
         </div>
@@ -132,6 +119,6 @@
     // console.log(target);
     setTimeout(()=>{
         window.location.href=`./${target}`
-    },2500)
+    },2000)
 </script>
 </html>
