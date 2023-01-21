@@ -1,18 +1,26 @@
 const getOrdersData = async () => {
     let res = await fetch(`https://bb-nwfw.onrender.com/order_details`);
     let data = await res.json();
-    appendOrdersData(data);
+    appendOrdersData(data,User_info);
   };
   getOrdersData();
 
- 
+  let User_info = JSON.parse(localStorage.getItem('User_info')) || [];
   
-  const appendOrdersData = (data) => {
+  const appendOrdersData = (data,User_info) => {
     let orders_div = document.getElementById("orders_tbody");
     orders_div.innerHTML = "";
+
+    
+
+
     data.forEach(({ id, images,Pimages,title,dec, price, Ptype, qty }) => {
       let tr = document.createElement("tr");
-  
+      
+      let user_name = `${User_info.fname} ${User_info.lname}`;
+      let user=document.createElement("td");
+      user.innerHTML=user_name;
+
       let img_td = document.createElement("td");
       let img = document.createElement("img");
       img.className = "pic"
@@ -35,7 +43,7 @@ const getOrdersData = async () => {
       
   
       let pri = document.createElement("td");
-      pri.innerText =price;
+      pri.innerText =price*Number(qty);
      
   
       let Type = document.createElement("td");
@@ -60,7 +68,7 @@ const getOrdersData = async () => {
         }
       };
   
-      tr.append(img_td, name, pri,Type,inventory, del);
+      tr.append(user,img_td, name, pri,Type,inventory, del);
         orders_div.append(tr);
       }
     );
