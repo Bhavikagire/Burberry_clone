@@ -535,7 +535,7 @@ padding: 0px;
         <div id="optionnav" class="maindrop">
 
 
-          <div class="dropdown" class="maindrop">
+          <div class="dropdown maindrop" >
             <li class="dropbtn nav-list "><b>Gifts</b></li>
             <div class="dropdown-content">
               <div>
@@ -561,7 +561,7 @@ padding: 0px;
               </div>
               <div>
                 <h3>CHILDREN'S GIFTS</h3>
-                </a>
+                
                 <a href="#"> All Gifts</a>
 
                 <a href="#">The Year of the Rabbit Gifts <button>New</button> </a>
@@ -590,7 +590,7 @@ padding: 0px;
 
                   <div class="firstpart_of_drop">
                     <h3> WOMEN</h3>
-                    </a>
+                  
                     <a href="#">New In</a>
 
                     <a href="#">The Year of the Rabbit Gifts <button>New</button> </a>
@@ -603,7 +603,7 @@ padding: 0px;
 
                     <div>
                       <h3> MEN</h3>
-                      </a>
+                  
                       <a href="#"> New In</a>
 
                       <a href="#">The Year of the Rabbit Gifts <button>New</button> </a>
@@ -626,12 +626,12 @@ padding: 0px;
                       <a href="#">The Winter Edit</a>
                       <a href="#">Burberry Loves</a>
 
-                      <a href="#">
+                      <a href="#"></a>
 
                     </div>
                     <div>
                       <h3> OUTERWEAR</h3>
-                      </a>
+                   
                       <a href="#">Women</a>
 
                       <a href="#">Men </a>
@@ -649,7 +649,7 @@ padding: 0px;
             </div>
           </div>
 
-          <div class="dropdown" class="maindrop">
+          <div class="dropdown maindrop" >
             <li class="dropbtn nav-list">WOMEN</li>
             <div class="dropdown-content">
               <div class="flex">
@@ -1029,10 +1029,10 @@ padding: 0px;
           
           <ion-icon id="search" name="search-outline"></ion-icon>
           <ion-icon id="person"  name="person-outline"></ion-icon>
-          <div id="register" class="dropbtn">dropdown-content
-            <a href="login.html">User login</a>
-            <a href="AdminLogin.html">Admin login</a>
-          </div>
+
+          <ion-icon id="admin" name="at-outline"></ion-icon>
+             
+
           <ion-icon name="bag-outline"></ion-icon>
           <ion-icon  id="burgermenu" name="menu-outline"></ion-icon>
           <style>
@@ -1180,7 +1180,11 @@ padding: 0px;
 </html>
 
 <script>
-
+ let adm= document.getElementById("admin");
+ adm.addEventListener("click",()=>{
+  // window.location.href = 'AdminLogin.html';
+  window.open('AdminLogin.html');
+ });
   let srchbtn = document.getElementById("search")
   let flag = true;
   srchbtn.addEventListener("mouseenter", function () {
