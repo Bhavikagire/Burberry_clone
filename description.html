@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title >Blueberry_official</title>
+  <title >Blueberry_product</title>
 
   <!-- this two script files are important for icons  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -25,18 +25,7 @@
       padding: 0px;
     }
 
-    #top {
-      background-color: black;
-      color: white;
-      height: 57px;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 0px;
-    }
-
+ 
     /* -----------------------navbarstyle starts from here--------------------------------------------- */
 
     nav {
@@ -119,12 +108,14 @@
       padding-bottom: 20px;
     }
 
-    .hro {
-      width: 100%;
-      height: 100vh;
+    .hro img{
+      width: 50%;
+      height: 100%;
       position: relative;
+      left: 0px;
       display: flex;
       align-items: center;
+      margin-left: 0px;
     }
 
     .flex {
@@ -245,12 +236,8 @@ padding: 0px;
     /* body{
   background-color: aqua;
 } */
-  #register{
-    display: none;
-  }
-#person:hover #register{
-    display: block;
-  }
+  
+
     .dropdown-content a:hover {
       background-color: #ddd;
     }
@@ -375,6 +362,20 @@ padding: 0px;
       text-decoration: underline black;
 
     }
+    
+    .hro img{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      left: 0px;
+      display: flex;
+      align-items: center;
+    }
+    .hro {
+        border: 1px solid red;
+        margin: 0px; 
+        width: 50%;
+    }
    
     
     @media all and (min-width:100px) and (max-width:1500px){
@@ -430,76 +431,132 @@ padding: 0px;
       display: block;
     }
     }
-    /* @media all and (min-width:1001px) and (max-width:2500px){
+    #upward{
+      display: flex;
+      justify-content: space-evenly;
+      width: 50%;
+      margin: auto;
+      margin-top: 40px;
+      margin-bottom: 25px;
+    }
+    #upward a{
+      text-decoration: none;
+      color: black;
+    }
+    .side-detail{
+      width: 50%;
+      height: 520px;
+      margin-left: 4px;
+    }
+    .new{
+      display: flex;
+      justify-content: space-around;
+    }
+    .lola{
+      padding: 20px 0px 20px 21px;
+    }
+    .color{
+      padding: 15px 0px 15px 21px;
+    }
+    .btns{
+      display: flex;
+      justify-content: space-evenly;
+      padding: 15px 0px 20px 21px;
+      width: 60%;
+    }
+    .btns>button{
+      border-radius: 50px;
+      padding: 20px;
+      border: none;
      
-      .maindrop{
-                margin-top: auto;
-              border: 1px solid red;
-              background-color: white;
-              margin-bottom: 20px;
-                display: flex;
-                flex-direction: column;
-               justify-content: flex-start;
-                position:fixed;
-                width: 99%;
-                top: 90px;
-                left:0;
-                z-index: index -1;
-                transition: .6s;
-                height: 650px;
+    }
+    .btns>button:hover{
+      border: 3px solid black;
+      cursor: pointer;
+    }
+    
+    .btns>button:nth-child(1){
+      background-color: #c9ac8d;
+    }
+    .btns>button:nth-child(2){
+      background-color: black;
+      color: white;
+    }
+    .btns>button:nth-child(3){
+      background-color: #d1e1ec;
+    }
+    .btns>button:nth-child(4){
+      background-color: #e7e0cb;
+    } 
+    .btns>button:nth-child(5){
+      background-color: #ab6940;
+    }
+    .two{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      margin-bottom: 20px;
 
-              }
-              #video video{
-                height: 700px;
-              }
-      .hro{
-      height: auto;
-     }
-     #midbanner{
+
+    }
+    .two a{
+      text-decoration: none;
+      color: white;
+    }
+    .two>button:hover{
+      background-color: rgb(206, 206, 206);
+    }
+    .two>button:nth-last-child(2){
+      background-color: black;
+      color: white;
+      padding: 10px 40px 10px 40px;
+      border-radius: 5px;
+      font-size: 17px;
+    }
+    .two>button:nth-last-child(1){
+      background-color:rgb(123, 122, 122);
+      color: black;
+      padding: 10px 70px 10px 70px;
+      border-radius: 5px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    .pro{
+      margin-top: 20px;
+      margin-bottom: 6px;
+      margin-left: 10px;
+    }
+    .det{
+      width: 70%;
+      margin-left: 10px;
+    }
+    .size{
+      width: 70%;
+      margin-left: 10px;
+    }
+    #sz{
+      margin-top: 20px;
+      margin-left: 17px;
+      margin-bottom: 10px;
+    }
+    .sz{
+      margin-left: 17px;
+      margin-bottom: 30px;
+      width: 40%;
       display: flex;
-      flex-direction: column;
-     margin: 0px;
-     
-      height: 50%;
-     }
-     #video{
-      padding-bottom: 0px;
-      border: 1px solid red;
-      margin: 0px;
-     }
-     #video video{
-      padding-bottom: 0px;
-      border: 1px solid blue;
-      height: auto;
-      margin: 0px;
-      height: 100%;
-     }
-     .centertext p{
-      font-size: 20px;
-     }
-     #rabbitvideo video{
-      width: 100%;
-    
-      height: 100%;
-     }
-     #footdiv{
-      display: flex;
-      flex-direction: column;
-     }
-    
-      #footdiv{
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-     }
-     #burgermenu{
-    display: block;
-  }
-  #footdiv>div{
-  
-    margin: 10px;
-    width: 80%;
-     }
-    } */
+      justify-content: space-around;
+    }
+    .sz button{
+      padding: 10px;
+      font-weight: bold;
+      background-color: white;
+      border: none;
+    }
+    .sz button:hover{
+      cursor: pointer;
+      border: 0.7px solid black;
+    }
+   
  
    
     
@@ -508,22 +565,82 @@ padding: 0px;
 </head>
 
 <body>
-  <div id="top">
-    <marquee behavior="" direction="left" id="topmarq">
-      <pre>
-         <span class="">  JOIN OUR COMMUNITY:SIGN UP FOR EXCLUSIVE BLUEBERRY UPDATES :SIGN UP  </span></pre>
-    </marquee>
-  </div>
-  <div class="hro">
+
+  <div class="flex">
+    <div class="new">
+    <div class="hro">
 
 
-    <div id="video">
-      <video height="900px" autoplay="true" loop="true" muted="true" playsinline="true" aria-label="Video Player"
-        translate="no" poster="https://tse2.mm.bing.net/th?id=OIP.tR2Upf12n6yr3m_YTSOdagHaHa&pid=Api&P=0"
-        src="mainvideo.mp4"></video>
+        <img src="https://assets.burberry.com/is/image/Burberryltd/FAD4FA81-190D-4578-A9C1-6717F1658C39?$BBY_V2_ML_1x1$&wid=1251&hei=1251" alt="">
     </div>
+    <div class="side-detail">
+             <div>
+              <ul id="upward">
+                <li>
+                  <a href="./Women.html">Womens</a>
+                </li>
+                <li>
+                  <a href="./womenbags.html">Womens Bags</a>
+                </li>
+                <li>
+                  <a href="#">All Bags</a>
+                </li>
+              </ul>
+              
+              </div>
 
-    <div>
+              <div class="lola">
+                <h3>
+                  Quilted leather Lola Card Case
+                </h3>
+              </div>
+              <hr>
+              <div class="color">
+                <h4>COLOURS:</h4>
+              </div>
+              <div class="btns">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+              </div>
+
+              <div id="sz">
+                <h3>SIZE:</h3>
+              </div>
+              <div class="sz">
+                <button>Small</button>
+                <button>Medium</button>
+                <button>Large</button>
+              </div>
+              
+              <div class="two">
+                <button><a href="">Add To Cart</a></button>
+                <button><a href="">Buy</a></button>
+              </div>
+
+              <hr>
+              <div class="pro">
+                <h3>PRODUCT DETAILS</h3>
+              </div>
+              <div class="det">
+                <p>
+                  A softly structured, quilted runway bag crafted from Italian-tanned leather. 
+                  The style is punctuated with a polished chain strap and the Thomas Burberry Monogram.
+                   Wear it on the shoulder or style as a crossbody. <br><br>
+                   </p>
+                   </div>
+                   <div class="size">
+                    <p>
+                   -17 x 3.5 x 10cm/6.7 x 1.4 x 3.9in <br>
+                   -Min. shoulder strap drop: 29cm/11.4in <br>
+                   -Max. shoulder strap drop: 55cm/21.7in <br>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- --------------------------------------------nav bar start from here -->
       <nav>
         <div id="logobluberry">
 
@@ -535,7 +652,7 @@ padding: 0px;
         <div id="optionnav" class="maindrop">
 
 
-          <div class="dropdown maindrop" >
+          <div class="dropdown" class="maindrop">
             <li class="dropbtn nav-list "><b>Gifts</b></li>
             <div class="dropdown-content">
               <div>
@@ -561,7 +678,7 @@ padding: 0px;
               </div>
               <div>
                 <h3>CHILDREN'S GIFTS</h3>
-                
+                </a>
                 <a href="#"> All Gifts</a>
 
                 <a href="#">The Year of the Rabbit Gifts <button>New</button> </a>
@@ -590,7 +707,7 @@ padding: 0px;
 
                   <div class="firstpart_of_drop">
                     <h3> WOMEN</h3>
-                  
+                    </a>
                     <a href="#">New In</a>
 
                     <a href="#">The Year of the Rabbit Gifts <button>New</button> </a>
@@ -603,7 +720,7 @@ padding: 0px;
 
                     <div>
                       <h3> MEN</h3>
-                  
+                      </a>
                       <a href="#"> New In</a>
 
                       <a href="#">The Year of the Rabbit Gifts <button>New</button> </a>
@@ -626,12 +743,12 @@ padding: 0px;
                       <a href="#">The Winter Edit</a>
                       <a href="#">Burberry Loves</a>
 
-                      <a href="#"></a>
+                      <a href="#">
 
                     </div>
                     <div>
                       <h3> OUTERWEAR</h3>
-                   
+                      </a>
                       <a href="#">Women</a>
 
                       <a href="#">Men </a>
@@ -649,7 +766,7 @@ padding: 0px;
             </div>
           </div>
 
-          <div class="dropdown maindrop" >
+          <div class="dropdown" class="maindrop">
             <li class="dropbtn nav-list">WOMEN</li>
             <div class="dropdown-content">
               <div class="flex">
@@ -1026,13 +1143,9 @@ padding: 0px;
 
 
         <div id="icon">
-          
+
           <ion-icon id="search" name="search-outline"></ion-icon>
-          <ion-icon id="person"  name="person-outline"></ion-icon>
-
-          <ion-icon id="admin" name="at-outline"></ion-icon>
-             
-
+          <ion-icon id="person" name="person-outline"></ion-icon>
           <ion-icon name="bag-outline"></ion-icon>
           <ion-icon  id="burgermenu" name="menu-outline"></ion-icon>
           <style>
@@ -1047,6 +1160,7 @@ padding: 0px;
 
       </nav>
 
+
       <div>
         <div id="apendinput">
 
@@ -1056,41 +1170,10 @@ padding: 0px;
 
   </div>
 
-  <div id="midbanner">
-    <div class="scarimg">
-      <img src="https://assets.burberry.com/is/image/Burberryltd/A4CFA49D-C07C-4611-A465-D74C6C5C3385?wid=800"
-        alt="Scarves">
-      <h2 class="SCARVERS">SCARVERS</h2>
-    </div>
-    <div>
-      <video height="900px" autoplay="true" loop="true" muted="true" playsinline="true" aria-label="Video Player"
-        translate="no"
-        poster="https://cf-images.eu-west-1.prod.boltdns.net/v1/jit/719509184001/3b3b3fb3-2996-490a-80a1-5243c25c3b13/main/1280x720/3s500ms/match/image.jpg"
-        src="men'sjacket.mp4"></video>
-    </div>
-    <div class="scarimg">
-      <img src="https://assets.burberry.com/is/image/Burberryltd/F4327030-4CD0-486B-8C43-FA4610004B0E?wid=1280"
-        alt="women coat">
-      <h2 style="font-size: 24px;" class="SCARVERS">Women’s coats &amp; jackets</h2>
-    </div>
-  </div>
 
-  <div class="centertext">
+  <!-- nav end here--------------------------------------------------------- -->
 
-    <p>WOMEN’S SNEAKERS</p>
-    <p>MEN’S SNEAKERS</p>
-    <p>WOMEN’S WINTER EDIT</p>
-    <p>MEN’S WINTER EDIT</p>
-
-
-  </div>
-
-  <div id="rabbitvideo">
-    <video height="900px" width="2000px" autoplay="true" loop="true" muted="true" playsinline="true"
-      aria-label="Video Player" translate="no"
-      poster="https://assets.burberry.com/is/image/Burberryltd/1876231E-68DB-4F5B-96C7-FF4A2C8DC907?wid=200"
-      src="rabbit.mp4"></video>
-  </div>
+ 
 
   <footer>
     <hr>
@@ -1180,11 +1263,7 @@ padding: 0px;
 </html>
 
 <script>
- let adm= document.getElementById("admin");
- adm.addEventListener("click",()=>{
-  // window.location.href = 'AdminLogin.html';
-  window.open('AdminLogin.html');
- });
+
   let srchbtn = document.getElementById("search")
   let flag = true;
   srchbtn.addEventListener("mouseenter", function () {
@@ -1265,11 +1344,6 @@ padding: 0px;
   })
 
   
-// document.getElementById("person").addEventListener("click",function(){
-
-//   localStorage.setItem('loder',JSON.stringify('login.html'))
-//     location.href="./loder.html"
-// })
 
 
 
