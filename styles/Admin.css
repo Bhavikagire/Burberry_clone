@@ -307,6 +307,31 @@ table tbody tr {
   margin-bottom: 30px;
 }
 
+/* orders page table styling */
+#orders_page > table thead tr th:nth-child(1),
+#orders_page > table thead tr th:nth-child(2),
+#orders_page > table thead tr th:nth-child(3),
+#orders_page > table thead tr th:nth-child(4),
+#orders_page > table thead tr th:nth-child(7),
+#orders_page > table thead tr th:nth-child(8) {
+  width: 10%;
+  text-align: center;
+}
+#orders_page > table thead tr th:nth-child(6),
+#orders_page > table thead tr th:nth-child(5) {
+  width: 20%;
+}
+#orders_page > h4 {
+  margin-bottom: 30px;
+}
+#orders_page > table tbody tr {
+  height: auto;
+  text-align: center;
+}
+#orders_page img {
+  width: 100%;
+  
+}
 
 .edit_icon {
   border: 1px solid #e5e7eb;

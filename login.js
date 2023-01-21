@@ -1,5 +1,4 @@
 // register here
-let User_info = JSON.parse(localStorage.getItem('User_info')) || [];
 document.getElementById('submit').addEventListener('click',()=>{
   console.log("reg");
     let location= document.getElementById('location').value
@@ -49,7 +48,6 @@ document.getElementById('sginin').addEventListener('click',()=>{
     console.log(data);
     let verify= verifyUser(data);
     if(verify){
-      localStorage.setItem('User_info',JSON.stringify(data));
       alert("ok done")
       window.location.href="./index.html"
     }else{

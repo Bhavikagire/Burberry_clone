@@ -1,13 +1,17 @@
+
+ let User_info = JSON.parse(localStorage.getItem('User_info')) || [];
 const getOrdersData = async () => {
     let res = await fetch(`https://bb-nwfw.onrender.com/order_details`);
     let data = await res.json();
-    appendOrdersData(data,User_info);
+    //appendOrdersData(data,User_info);
+    appendOrdersData(data);
   };
   getOrdersData();
 
-  let User_info = JSON.parse(localStorage.getItem('User_info')) || [];
+ 
   
-  const appendOrdersData = (data,User_info) => {
+  //const appendOrdersData = (data,User_info) => {
+    const appendOrdersData = (data) => {
     let orders_div = document.getElementById("orders_tbody");
     orders_div.innerHTML = "";
 
@@ -68,7 +72,7 @@ const getOrdersData = async () => {
         }
       };
   
-      tr.append(user,img_td, name, pri,Type,inventory, del);
+      tr.append(img_td, name, pri,Type,inventory, del);
         orders_div.append(tr);
       }
     );
