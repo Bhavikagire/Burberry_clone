@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blueberry_official</title>
+  <title >Blueberry_official</title>
 
   <!-- this two script files are important for icons  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -153,7 +153,7 @@
       font-weight: bold;
 
     }
-
+   
 
 
 
@@ -179,13 +179,13 @@
       margin: auto;
       margin-top: 0%;
       width: 100%;
-
+     
     }
 
     #video video {
       width: 99%;
-      margin: 0px;
-      padding: 0px;
+margin: 0px;
+padding: 0px;
 
       margin-left: 9px;
       margin-bottom: 0px;
@@ -195,10 +195,10 @@
 
     #midbanner {
       display: flex;
-
+     
       margin: 0px;
       padding: 0px;
-
+     
     }
 
     #midbanner div {
@@ -245,14 +245,12 @@
     /* body{
   background-color: aqua;
 } */
-    #register {
-      display: none;
-    }
-
-    #person:hover #register {
-      display: block;
-    }
-
+  #register{
+    display: none;
+  }
+#person:hover #register{
+    display: block;
+  }
     .dropdown-content a:hover {
       background-color: #ddd;
     }
@@ -377,72 +375,61 @@
       text-decoration: underline black;
 
     }
-
-
-    @media all and (min-width:100px) and (max-width:1500px) {
-      #optionnav {
+   
+    
+    @media all and (min-width:100px) and (max-width:1500px){
+      #optionnav{
         display: none;
       }
-
-      #midbanner {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-
-      }
-
-      nav {
-        margin: 0px;
-        padding: 0px;
-        height: 0px;
-      }
-
-      .hro {
-        height: auto;
-      }
-
-      #video {
-        padding-bottom: 0px;
-
-        margin: 0px;
-        padding: 0px;
-      }
-
-      #video video {
-        padding-bottom: 0px;
-
-        height: auto;
-        margin: 0px;
-        height: 100%;
-      }
-
-      .centertext p {
-        font-size: 20px;
-      }
-
-      #rabbitvideo video {
-        width: 100%;
-
-        height: 100%;
-      }
-
-      #footdiv {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
-      }
-
-      #footdiv>div {
-
-        margin: 10px;
-        width: 80%;
-      }
-
-      #burgermenu {
-        display: block;
-      }
+     #midbanner{
+      display: flex;
+      flex-direction: column;
+     margin: 0px;
+     
+     }
+     nav{
+      margin: 0px;
+      padding: 0px;
+      height: 0px;
+     }
+     .hro{
+      height: auto;
+     }
+     #video{
+      padding-bottom: 0px;
+     
+      margin: 0px;
+      padding: 0px;
+     }
+     #video video{
+      padding-bottom: 0px;
+     
+      height: auto;
+      margin: 0px;
+      height: 100%;
+     }
+     .centertext p{
+      font-size: 20px;
+     }
+     #rabbitvideo video{
+      width: 100%;
+     
+      height: 100%;
+     }
+     #footdiv{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      
+     }
+     #footdiv>div{
+    
+    margin: 10px;
+    width: 80%;
+     }
+     #burgermenu{
+      display: block;
     }
-
+    }
     /* @media all and (min-width:1001px) and (max-width:2500px){
      
       .maindrop{
@@ -513,6 +500,10 @@
     width: 80%;
      }
     } */
+ 
+   
+    
+    
   </style>
 </head>
 
@@ -520,7 +511,7 @@
   <div id="top">
     <marquee behavior="" direction="left" id="topmarq">
       <pre>
-         <span>  JOIN OUR COMMUNITY:SIGN UP FOR EXCLUSIVE BLUEBERRY UPDATES :SIGN UP  </span></pre>
+         <span class="">  JOIN OUR COMMUNITY:SIGN UP FOR EXCLUSIVE BLUEBERRY UPDATES :SIGN UP  </span></pre>
     </marquee>
   </div>
   <div class="hro">
@@ -544,7 +535,7 @@
         <div id="optionnav" class="maindrop">
 
 
-          <div class="dropdown maindrop">
+          <div class="dropdown" class="maindrop">
             <li class="dropbtn nav-list "><b>Gifts</b></li>
             <div class="dropdown-content">
               <div>
@@ -658,7 +649,7 @@
             </div>
           </div>
 
-          <div  class="dropdown maindrop">
+          <div class="dropdown" class="maindrop">
             <li class="dropbtn nav-list">WOMEN</li>
             <div class="dropdown-content">
               <div class="flex">
@@ -1030,65 +1021,38 @@
 
 
 
-          </head>
-
-        
-
-<!-- <div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#"> Admin Login</a>
-    <a href="#">User Login</a>
-
-  </div> -->
-
-
-
 
         </div>
 
 
+        <div id="icon">
+          
+          <ion-icon id="search" name="search-outline"></ion-icon>
+          <ion-icon id="person"  name="person-outline"></ion-icon>
+          <div id="register" class="dropbtn">dropdown-content
+            <a href="login.html">User login</a>
+            <a href="AdminLogin.html">Admin login</a>
+          </div>
+          <ion-icon name="bag-outline"></ion-icon>
+          <ion-icon  id="burgermenu" name="menu-outline"></ion-icon>
+          <style>
+            #burgermenu{
+              display: none;
+            }
+           
+            
+          </style>
+        </div>
+        
 
+      </nav>
 
+      <div>
+        <div id="apendinput">
 
-
-
-
-
-
-
-
-
-
-    </div>
-
-
-    <div id="icon">
-
-      <ion-icon id="search" name="search-outline"></ion-icon>
-      <ion-icon id="person" name="person-outline"></ion-icon>
-      <div id="register" class="dropdown-content">
-        <a href="login.html">User login</a>
-        <a href="AdminLogin.html">Admin login</a>
-      </div>
-      <ion-icon name="bag-outline"></ion-icon>
-      <ion-icon id="burgermenu" name="menu-outline"></ion-icon>
-      <style>
-        #burgermenu {
-          display: none;
-        }
-      </style>
-    </div>
-
-
-    </nav>
-
-    <div>
-      <div id="apendinput">
-
+        </div>
       </div>
     </div>
-  </div>
 
   </div>
 
@@ -1277,26 +1241,26 @@
   let optionflag = true;
 
   let burgermenu = document.getElementById("burgermenu")
-  burgermenu.addEventListener("click", function () {
+  burgermenu.addEventListener("click",function(){
 
-    if (optionflag) {
-      var option = document.getElementById("optionnav")
-      option.style.display = "block"
-      option.style.display = "flex"
-      option.style.flexDirection = "column"
-
-      optionflag = false
-
-    }
-    else {
-      var option = document.getElementById("optionnav")
-      option.style.display = "none"
-      optionflag = true;
-
-    }
+   if(optionflag){
+    var option = document.getElementById("optionnav")
+    option.style.display = "block"
+    option.style.display = "flex"
+    option.style.flexDirection = "column"
+    
+    optionflag = false
+    
+   }
+   else{
+    var option = document.getElementById("optionnav")
+    option.style.display = "none"
+    optionflag = true;
+  
+   }
   })
 
-
+  
 // document.getElementById("person").addEventListener("click",function(){
 
 //   localStorage.setItem('loder',JSON.stringify('login.html'))
@@ -1330,72 +1294,63 @@
     }
 </style> -->
 <style>
-  @media all and (min-width:100px) and (max-width:1500px) {
-    .maindrop {
+   @media all and (min-width:100px) and (max-width:1500px){
+    .maindrop{
       width: 200px;
     }
-
-    .maindrop {
-      margin-top: auto;
-
-      background-color: white;
-      margin-bottom: 20px;
-      display: flex;
-      justify-content: flex-start;
-      position: fixed;
-      width: 99%;
-      top: 90px;
-      left: 0;
-      z-index: index -1;
-      transition: .6s;
-      height: 600px;
-      padding-left: 0px;
-
-    }
-
-    .maindrop>div {
-      margin-left: 10px;
-    }
-
-    .maindrop>div {
-      margin-left: 10px;
-    }
-
-    #video video {
-      height: 700px;
-    }
-
-    #midbanner {
+    
+              .maindrop{
+                margin-top: auto;
+            
+              background-color: white;
+              margin-bottom: 20px;
+                display: flex;
+               justify-content: flex-start;
+                position:fixed;
+                width: 99%;
+                top: 90px;
+                left:0;
+                z-index: index -1;
+                transition: .6s;
+                height: 600px;
+                padding-left: 0px;
+                
+              }
+              .maindrop>div{
+               margin-left: 10px;
+              }
+              .maindrop>div{
+               margin-left: 10px;
+              }
+              #video video{
+                height: 700px;
+              }
+              #midbanner{
       display: flex;
       flex-direction: column;
-      margin: 0px;
-      /* margin-top: 380px; */
-    }
-
-    nav {
+     margin: 0px;
+     /* margin-top: 380px; */
+     }
+     nav{
       margin: 0px;
       padding: 0px;
       height: 0px;
-    }
-
-    .hro {
+     }
+     .hro{
       height: auto;
-    }
-
-    /* .hro{
+     }
+              /* .hro{
                 border: 1px yellow;
              
               } */
-    #search {
-      display: none;
-    }
-
-    #optionnav>div {
-      display: block;
-    }
-
-    #burgermenu {
-      display: block;
-    }
-  }
+              #search{
+                display: none;
+              }
+              #optionnav>div{
+        display: block;
+      }
+              #burgermenu{
+              display: block;
+            }
+            }
 </style>
