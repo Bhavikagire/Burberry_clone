@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title >Blueberry_product</title>
+
+  <!-- this two script files are important for icons  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <!-- -------------------------------------------- -->
+  <style>
+    * {
+      margin: auto;
+      padding: 0;
+    }
+
+    body {
+      background-color: white;
+      margin: 0px;
+      padding: 0px;
+    }
+
+ 
+    /* -----------------------navbarstyle starts from here--------------------------------------------- */
+
+    nav {
+      display: flex;
+      background-color: transparent;
+      font-size: larger;
+      font-stretch: semi-condensed;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      display: inline;
+    }
+
+    #optionnav {
+      display: flex;
+      margin-top: 36px;
+    }
+
+    #icon {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    ion-icon {
+      font-size: 34px;
+      padding: 30px;
+    }
+
+    #logobluberry img {
+      width: 250px;
+      margin-top: 20px;
+    }
+
+    .dropbtn {
+      background-color: transparent;
+      color: black;
+      padding: 16px;
+      font-size: 25px;
+      border: none;
+
+
+      height: 100%;
+
+      display: flex;
+      margin-bottom: 10px;
+      color: inherit;
+      cursor: pointer;
+
+      line-height: 20px;
+      text-transform: uppercase;
+      padding: 30px;
+      display: inline;
+
+      font-family: sans-serif;
+      /* position: relative; */
+      list-style: none;
+      font-weight: bold;
+      font-size: 22px;
+
+
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-top: 28px;
+
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #F1F1F1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      margin-top: 10px;
+      padding-bottom: 20px;
+    }
+
+    .hro img{
+      width: 50%;
+      height: 100%;
+      position: relative;
+      left: 0px;
+      display: flex;
+      align-items: center;
+      margin-left: 0px;
+    }
+
+    .flex {
+      display: flex;
+      margin: 20px;
+    }
+
+    .firstpart_of_drop {
+      margin-top: 10px;
+    }
+
+    nav {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: flex;
+    }
+
+    nav:hover {
+      background-color: white;
+    }
+
+    .nav-list {
+      font-weight: bold;
+
+    }
+   
+
+
+
+    #apendinput input {
+      width: 900px;
+      height: 100px;
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+      margin: 0px;
+      font-size: 23px;
+      padding-left: 35px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+
+    #video {
+      margin: auto;
+      margin-top: 0%;
+      width: 100%;
+     
+    }
+
+    #video video {
+      width: 99%;
+margin: 0px;
+padding: 0px;
+
+      margin-left: 9px;
+      margin-bottom: 0px;
+
+    }
+
+
+    #midbanner {
+      display: flex;
+     
+      margin: 0px;
+      padding: 0px;
+     
+    }
+
+    #midbanner div {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    #midbanner video {
+      width: 100%;
+      height: 102%;
+    }
+
+    #midbanner img {
+      width: 100%;
+      height: 640px;
+    }
+
+    .centertext {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .centertext p {
+      margin: 45px;
+      font-family: 'Styrene', Helvetica, Arial, sans-serif;
+      cursor: pointer;
+      color: inherit;
+      font-stretch: extra-expanded;
+      font-size: 30px;
+      font-weight: 550;
+    }
+
+    /* 
+    #rabbitvideo video {
+
+
+
+    #footdiv {
+      display: flex;
+    }
+
+    /* body{
+  background-color: aqua;
+} */
+  
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+      width: 600px;
+      margin-top: 25px;
+      text-align: left;
+      padding-left: 60px;
+      padding-top: 20px;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: none;
+      text-decoration: underline;
+    }
+
+    .dropbtn:hover body {
+      background-color: red;
+    }
+
+
+    #footdiv {
+      font-family: 'Styrene', Helvetica, Arial, sans-serif;
+    }
+
+    #footdiv>div {
+      width: 30%;
+      margin: 30px 50px 20px;
+      padding: 20px;
+      font-size: 15px;
+
+    }
+
+    .foottext:hover {
+      color: gray;
+    }
+
+    footer pre {
+      font-size: 18px;
+    }
+
+    #footdiv>div>p:hover,
+    h3:hover {
+
+      color: gray;
+    }
+
+    .foottext {
+      margin: 10px;
+      margin-bottom: 30px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .us_language_ship p {
+      color: gray;
+      font-size: 17px;
+
+    }
+
+    .us_language_ship p:hover {
+      color: rgb(51, 47, 47);
+
+    }
+
+    .us_language_ship {
+      margin-bottom: 35px;
+    }
+
+    .scarimg {
+      position: relative;
+      font-family: 'Styrene', Helvetica, Arial, sans-serif;
+
+    }
+
+    .scarimg img {
+      width: 100%;
+      display: block;
+    }
+
+    .SCARVERS {
+      position: absolute;
+      top: 20px;
+      left: 15px;
+      font-size: 20px;
+    }
+
+
+    .footsummary {
+      font-size: 18px;
+      margin: 20px;
+      margin-left: 30px;
+      color: rgb(59, 58, 58);
+    }
+
+    #footsign {
+      margin-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    #footsign+p {
+      color: rgb(59, 58, 58);
+    }
+
+    #inputfooter {
+      border: none;
+      margin-top: 10px;
+      padding: 15px;
+      width: 88%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+      font-size: 20px;
+    }
+
+    #bottompara {
+      margin: 20px 80px 10px;
+      color: gray;
+    }
+
+    #bottompara span {
+      text-decoration: underline black;
+
+    }
+    
+    .hro img{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      left: 0px;
+      display: flex;
+      align-items: center;
+      margin-left: 0px;
+      border: 1px solid red;
+    }
+    .hro {
+        border: 1px solid red;
+        margin: 0px; 
+        width: 50%;
+    }
+   
+    
+    @media all and (min-width:100px) and (max-width:1500px){
+      #optionnav{
+        display: none;
+      }
+     #midbanner{
+      display: flex;
+      flex-direction: column;
+     margin: 0px;
+     
+     }
+     nav{
+      margin: 0px;
+      padding: 0px;
+      height: 0px;
+     }
+     .hro{
+      height: auto;
+     }
+     #video{
+      padding-bottom: 0px;
+     
+      margin: 0px;
+      padding: 0px;
+     }
+     #video video{
+      padding-bottom: 0px;
+     
+      height: auto;
+      margin: 0px;
+      height: 100%;
+     }
+     .centertext p{
+      font-size: 20px;
+     }
+     #rabbitvideo video{
+      width: 100%;
+     
+      height: 100%;
+     }
+     #footdiv{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      
+     }
+     #footdiv>div{
+    
+    margin: 10px;
+    width: 80%;
+     }
+     #burgermenu{
+      display: block;
+    }
+    }
+ 
+   
+    
+    
+  </style>
+</head>
+
+<body>
+
+  <div class="flex">
+    <div class="hro">
+
+
+        <img src="https://assets.burberry.com/is/image/Burberryltd/FAD4FA81-190D-4578-A9C1-6717F1658C39?$BBY_V2_ML_1x1$&wid=1251&hei=1251" alt="">
+    </div>
+             <div>
+                  <p>img right side</p>
+              </div>
+  
+      <nav>
+        <div id="logobluberry">
+
+          <img
+            src="https://i.ibb.co/1vxmCsY/blueberry-high-resolution-logo-black-on-transparent-background-1-removebg-preview-1.png"
+            alt="blueberry-logo">
+
+        </div>
+        <div id="optionnav" class="maindrop">
+
+
+          <div class="dropdown" class="maindrop">
+            <li class="dropbtn nav-list "><b>Gifts</b></li>
+            <div class="dropdown-content">
+              <div>
+                <a href="#">
+
+                  <h3> WOMEN'S GIFTS</h3>
+                </a>
+                <a href="#"> All Gifts</a>
+
+                <a href="#">The Year of the Rabbit Gifts <button>New</button> </a>
+
+                <a href="#">Personalised Gifts</a>
+
+              </div>
+              <div>
+                <h3>MEN'S GIFTS</h3>
+
+                <a href="#"> All Gifts</a>
+
+                <a href="#">The Year of the Rabbit Gifts <button>New</button> </a>
+
+                <a href="#">Personalised Gifts</a>
+              </div>
+              <div>
+                <h3>CHILDREN'S GIFTS</h3>
+                </a>
+                <a href="#"> All Gifts</a>
+
+                <a href="#">The Year of the Rabbit Gifts <button>New</button> </a>
+
+                <a href="#">Personalised Gifts</a>
+
+                <br>
+                <h3 href="#">Blueberry Services</h3>
+                <br>
+                <h3 href="#">Gift Cards</h3>
+
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="dropdown">
+            <li class="dropbtn nav-list">New in</li>
+            <div class="dropdown-content">
+
+
+
+              <div class="maindrop">
+                <div class="flex">
+
+                  <div class="firstpart_of_drop">
+                    <h3> WOMEN</h3>
+                    </a>
+                    <a href="#">New In</a>
+
+                    <a href="#">The Year of the Rabbit Gifts <button>New</button> </a>
+
+                    <a href="#">The Winter Edit</a>
+                    <a href="#">Burberry Loves</a>
+
+
+
+
+                    <div>
+                      <h3> MEN</h3>
+                      </a>
+                      <a href="#"> New In</a>
+
+                      <a href="#">The Year of the Rabbit Gifts <button>New</button> </a>
+
+                      <a href="#">The Winter Edit</a>
+                      <a href="#"> Burberry Loves</a>
+                    </div>
+                  </div>
+
+                  <div class="scendpart_of_drop">
+
+                    <div>
+                      <a href="#">
+                        <h3>CHILDREN</h3>
+                      </a>
+                      <a href="#">New In</a>
+
+                      <a href="#">The Year of the Rabbit Gifts <button>New</button> </a>
+
+                      <a href="#">The Winter Edit</a>
+                      <a href="#">Burberry Loves</a>
+
+                      <a href="#">
+
+                    </div>
+                    <div>
+                      <h3> OUTERWEAR</h3>
+                      </a>
+                      <a href="#">Women</a>
+
+                      <a href="#">Men </a>
+
+                      <a href="#">The Trench Coat</a>
+
+                      <br>
+                      <a href="#">The Outerwear Campaign 2022: Embrace The Unknown <button>New</button> </a>
+                      <br>
+                      <a href="#">The Year of the Rabbit<button>New</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown" class="maindrop">
+            <li class="dropbtn nav-list">WOMEN</li>
+            <div class="dropdown-content">
+              <div class="flex">
+                <div class="firstpart_of_drop">
+                  <a href="#">
+
+                    <h3> OUTEWERWEAR</h3>
+                  </a>
+                  <a href="#"> All Outerwear</a>
+                  <a href="#">Trench Coats</a>
+                  <a href="#">Coats</a>
+                  <a href="#">Quilts & Jackets</a>
+                  <a href="#">Puffer Jackets</a>
+                  <a href="#">Ponchos & Capes</a>
+
+                  <a href="#">CLOTHING </a>
+
+                  <a href="#">Hoodies & Sweatshirts</a>
+                  <a href="#">Knitwear</a>
+
+
+                  <a href="#">
+                    <h3>BAGS</h3>
+                  </a>
+                  <a href="#"> All Bags</a>
+
+                  <a href="#">Signature Bags</a>
+
+                  <a href="#">Mini Bags</a>
+
+                  <a href="#">Shoulder Bags</a>
+                </div>
+                <div class="scendpart_of_drop">
+                  <a href="#">
+                    <h3> SHOES</h3>
+                  </a>
+                  <a href="#"> All Shoes</a>
+
+                  <a href="#">Sneakers</a>
+
+                  <a href="#">Boots</a>
+
+
+
+                  <a href="#">
+                    <h3> FRAGRANCE</h3>
+                  </a>
+                  <a href="#"> All Fragrance</a>
+
+                  <a href="#">Burberry Signatures <button>New</button> </a>
+
+                  <a href="#">Her</a>
+
+                  <a href="#">
+                    <h3> MAKE-UP</h3>
+                  </a>
+                  <a href="#">All Make-up</a>
+
+                  <a href="#">Face</a>
+
+                  <a href="#">Lips</a>
+                  <a href="#">Eyes</a>
+                  <a href="#">For you</a>
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <li class="dropbtn nav-list">MEN</li>
+
+
+
+            <div class="dropdown-content">
+              <div class="flex">
+                <div>
+                  <a href="#">
+                    <h3> CLOTHING</h3>
+                  </a>
+                  <a href="#"> Polos & T-shirts</a>
+
+                  <a href="#">Hoodies & Sweatshirts </a>
+
+                  <a href="#">Knitwear</a>
+
+                  <a href="#"> Trousers & Shorts</a>
+                  <a href="#">Tailoring</a>
+                  <a href="#">Swimwear</a>
+                  <a href="#">Underwear</a>
+
+                  <a href="#">
+                    <h3> SHOES</h3>
+                  </a>
+                  <a href="#"> All Shoes</a>
+
+                  <a href="#">Sneakers</a>
+
+                  <a href="#">Boots</a>
+
+                  <a href="#">Formal</a>
+                </div>
+                <div>
+                  <a href="#">
+                    <h3>ACCESSORIES</h3>
+                  </a>
+                  <a href="#">Wallets & Small Leather Goods</a>
+
+                  <a href="#">Scarves</a>
+                  <a href="#">Belts</a>
+                  <a href="#">Hats & Gloves</a>
+                  <a href="#"> Ties & Cufflinks</a>
+                  <a href="#">Keyrings</a>
+                  <a href="#">Eyewear</a>
+                  <a href="#">Socks</a>
+                  <a href="#">Jewellery</a>
+                  <br>
+                  <a href="#">Blueberry Services</a>
+                  <br>
+                  <a href="#">Gift Cards</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <li class="dropbtn nav-list">children</li>
+            <div class="dropdown-content">
+
+
+              <div class="flex" style="margin-right: 60px;">
+
+                <div>
+
+                  <a href="#">
+                    <h3>BABY 0-24 MTHS</h3>
+                  </a>
+                  <a href="#">Baby Grows & Gift Sets</a>
+
+                  <a href="#">Coats & Jackets</a>
+
+                  <a href="#">Dresses</a>
+                  <a href="#">Tops</a>
+                  <a href="#"> Knitwear & Sweatshirts</a>
+                  <a href="#">Skirts & Trousers</a>
+                  <a href="#">Swimwear</a>
+                  <a href="#">Changing Bags</a>
+
+                </div>
+                <div style="margin-top: 20px;">
+
+                  <a href="#">
+                    <h3>GIRL 3-14 YRS</h3>
+                  </a>
+                  <a href="#"> All Girl</a>
+
+                  <a href="#">Coats & Jackets</a>
+
+                  <a href="#">Trench Coats</a>
+                  <a href="#">Quilts & Puffers</a>
+                  <a href="#"> Dresses & Jumpsuits</a>
+                  <a href="#"> Tops</a>
+                  <a href="#">Skirts & Trousers</a>
+                  <a href="#"> Knitwear & Sweatshirts</a>
+                  <a href="#"> Swimwear</a>
+                </div>
+                <div>
+
+                  <a href="#">
+                    <h3>BOY 3-14 YRS</h3>
+                  </a>
+                  <a href="#"> Coats & Jackets</a>
+
+                  <a href="#">Trench Coats</a>
+
+                  <a href="#">Quilts & Puffers</a>
+
+                  <a href="#"> Polos & T-shirts</a>
+
+                  <a href="#">Shirts</a>
+
+                  <a href="#">Knitwear & Sweatshirts</a>
+
+                  <a href="#">Trousers & Shorts</a>
+
+                  <a href="#">Swimwear</a>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <li class="dropbtn nav-list">outwear</li>
+
+            <div class="dropdown-content">
+
+
+              <div class="flex" style="gap: 30px;">
+                <div>
+                  <a href="#">
+                    <h3> WOMEN</h3>
+                  </a>
+
+                  <a href="#"> All Outerwear</a>
+
+                  <a href="#">Puffer Jackets</a>
+
+                  <a href="#">Trench Coats</a>
+                  <a href="#">Quilts and Jackets</a>
+                  <a href="#">Coats</a>
+                  <a href="#">Ponchos and Capes </a>
+
+                </div>
+                <div>
+                  <a href="#">
+                    <h3> MEN</h3>
+                  </a>
+
+                  <a href="#">All Outerwear</a>
+
+                  <a href="#">Puffer Jackets</a>
+                  <a href="#">Trench Coats</a>
+                  <a href="#">Puffer Jackets</a>
+
+                  <a href="#">Jackets & Quilts</a>
+                  <a href="#">Coats</a>
+                </div>
+
+                <div>
+
+                  <a href="#">
+                    <h3> BABY 0-24 MTHS</h3>
+                  </a>
+                  <a href="#"> All Outerwear</a>
+
+                  <a href="#">DISCOVER </a>
+
+                  <a href="#">The Outerwear Campaign 2023: Embrace The Unknown <button>New</button> </a>
+
+                  <a href="#">Burberry Outerwear <button>New</button> </a>
+
+                  <a href="#">Outerwear</a>
+                  <a href="#"> The Trench Coat </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="dropdown">
+            <li class="dropbtn nav-list">bags</li>
+            <div class="dropdown-content">
+
+
+              <div class="flex">
+                <div>
+
+                  <a href="#">
+                    <h3> SIGNATURE BAGS</h3>
+                  </a>
+                  <a href="#"> The Lola Bag</a>
+
+                  <a href="#">The Note Bag</a>
+
+                  <a href="#">The Pocket Bag</a>
+
+                  <a href="#">The TB Bag</a>
+                  <a href="#">The Frances Bag</a>
+
+
+                </div>
+                <div>
+                  <a href="#">
+                    <h3> WOMEN'S BAGS</h3>
+                  </a>
+                  <a href="#">All Bags</a>
+
+                  <a href="#">Signature Bags</a>
+
+                  <a href="#">Top Handle Bags</a>
+
+                  <a href="#">Mini Bags</a>
+                  <a href="#">Tote Bags</a>
+                  <a href="#">Crossbody Bags</a>
+                  <a href="#">Shoulder Bags</a>
+                  <a href="#"> Belt Bags</a>
+                </div>
+                <div>
+                  <a href="#">
+                    <h3> MEN'S BAGS</h3>
+                  </a>
+
+                  <a href="#"> All Bags</a>
+
+                  <a href="#">Crossbody Bags</a>
+
+                  <a href="#"> Belt Bags</a>
+
+                  <a href="#">Backpacks</a>
+
+
+                  <a href="#"> Tote Bags</a>
+                  <a href="#"> Holdalls</a>
+                  <a href="#"> Briefcases</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="dropbtn nav-list">stories</li>
+            <div class="dropdown-content">
+              <a href="#">
+                <h3>COLLABORATIONS</h3>
+              </a>
+              <a href="#"> Burberry x Minecraft</a>
+
+              <a href="#">Burberry x SSENSE</a>
+
+              <a href="#">Meet Burberry Ambassador Jun Ji-hyun</a>
+              <a href="#"> The Lola bag and Highsnobiety</a>
+
+
+
+              <a href="#">
+                <h3> STORES & POP UPS</h3>
+              </a>
+              <a href="#"> Burberry x Minecraft Pop-ups</a>
+
+              <a href="#">The Alpine Outpost Pop-ups</a>
+
+              <a href="#"> TB Summer Monogram Pop-ups</a>
+              <a href="#"> The World of Lola</a>
+              <a href="#">
+                <h3>STYLE & COMMUNITY</h3>
+              </a>
+              <a href="#"> Outerwear</a>
+
+              <a href="#">Signature Sneakers</a>
+
+              <a href="#"> Signature Bags</a>
+
+              <a href="#">Beyond the Archive</a>
+
+
+            </div>
+
+          </div>
+
+
+
+          <div class="dropdown">
+            <li class="dropbtn nav-list">Beyond</li>
+            <!-- <div class="dropdown-content">
+
+          </div> -->
+
+          </div>
+
+
+          <!--   
+<li class="nav-list"><a href="#"></a></li> -->
+
+
+
+
+        </div>
+
+
+        <div id="icon">
+
+          <ion-icon id="search" name="search-outline"></ion-icon>
+          <ion-icon id="person" name="person-outline"></ion-icon>
+          <ion-icon name="bag-outline"></ion-icon>
+          <ion-icon  id="burgermenu" name="menu-outline"></ion-icon>
+          <style>
+            #burgermenu{
+              display: none;
+            }
+           
+            
+          </style>
+        </div>
+        
+
+      </nav>
+
+      <div>
+        <div id="apendinput">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+ <div class="flex">
+    <div>
+        <p>mid div</p>
+     </div>
+    
+      <div>
+        <p>extra div</p>
+      </div>
+    
+     <div>
+        last
+     </div>
+ </div>
+
+  <footer>
+    <hr>
+    <div id="footdiv" class="flex">
+      <div>
+        <h3 id="footsign">SIGN UP</h3>
+        <p class="foottext">Sign up below for updates about the world of Burberry, including
+          collection launches and early access to limited-edition products and collaborations.</p>
+        <input id="inputfooter" class="foottext" type="email" placeholder="Email">
+        <hr>
+      </div>
+      <div>
+        <p class="foottext">STORE LOCATOR
+
+        </p>
+        <p class="foottext">
+          DOWNLOAD OUR APP
+        </p>
+        <p class="foottext">BOOK AN APPOINTMENT</p>
+      </div>
+      <div>
+        <details>
+          <summary class="foottext">CUSTOMER SERVICE</summary>
+          <summary class="footsummary">Contact Us</summary>
+          <summary class="footsummary">Shipping</summary>
+          <summary class="footsummary">Ordering & Payment</summary>
+          <summary class="footsummary">Returns</summary>
+          <summary class="footsummary">Burberry Services</summary>
+        </details>
+        <details>
+          <summary class="foottext">LEGAL & COOKIES </summary>
+          <summary class="footsummary">Terms & Conditions</summary>
+          <summary class="footsummary">Burberry x 4Gift – Terms & Conditions</summary>
+          <summary class="footsummary">Privacy Policy</summary>
+          <summary class="footsummary">Cookie Policy</summary>
+          <summary class="footsummary">Accessibility Statement</summary>
+          <summary class="footsummary">4Gift FAQ</summary>
+          <summary class="footsummary">Japan only- SCTL indications</summary>
+          <summary class="footsummary">Transparency in the Supply Chain and Modern Slavery Statements</summary>
+          <summary class="footsummary">Do not sell my personal information</summary>
+        </details>
+
+        <details>
+          <summary class="foottext">FOLLOW US </summary>
+          <summary class="footsummary">Facebook</summary>
+          <summary class="footsummary">Twitter</summary>
+          <summary class="footsummary">Instagram</summary>
+
+
+
+        </details>
+        <details>
+          <summary class="foottext">OUR COMPANY </summary>
+          <summary class="footsummary">Our History</summary>
+          <summary class="footsummary">Burberry Group Plc</summary>
+          <summary class="footsummary">careers</summary>
+          <summary class="footsummary">Corporate Responsibility</summary>
+          <summary class="footsummary">Site Map</summary>
+          <summary class="footsummary">Sustainability</summary>
+
+        </details>
+
+      </div>
+      <div>
+        <div class="us_language_ship">
+          <h3 class="foottext">LANGUAGE</h3>
+          <p class="foottext"> English</p>
+        </div>
+
+        <div class="us_language_ship">
+          <h3 class="foottext"> SHIPPING TO</h3>
+          <p class="foottext">United States ($)</p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <p id="bottompara">
+      If you are using a screen-reader and are having problems using this website, please call <span>+1 877 217
+        4085</span> or <span>contact us</span> for assistance.
+    </p>
+
+  </footer>
+
+</body>
+
+</html>
+
+<script>
+
+  let srchbtn = document.getElementById("search")
+  let flag = true;
+  srchbtn.addEventListener("mouseenter", function () {
+    let appenddiv = document.getElementById("apendinput")
+    if (flag == true) {
+      let inputsrch = document.createElement("input")
+      inputsrch.placeholder = "Search anything from Here"
+
+
+      appenddiv.append(inputsrch)
+      flag = false
+
+    }
+
+
+    inputsrch.addEventListener("mouseleave", function () {
+
+
+      let appenddiv = document.getElementById("apendinput")
+
+      appenddiv.innerHTML = null
+      flag = true
+
+
+    })
+
+  })
+
+  let person = document.getElementById("person")
+  person.addEventListener("mouseenter", function () {
+
+    let appenddiv = document.getElementById("apendinput")
+
+    appenddiv.innerHTML = null
+
+    flag = true
+  })
+
+
+  let optionnav = document.getElementById("optionnav")
+  optionnav.addEventListener("mouseenter", function () {
+
+    let appenddiv = document.getElementById("apendinput")
+
+    appenddiv.innerHTML = null
+
+    flag = true
+  })
+  let topmarq = document.getElementById("topmarq")
+  topmarq.addEventListener("mouseenter", function () {
+
+    let appenddiv = document.getElementById("apendinput")
+
+    appenddiv.innerHTML = null
+
+    flag = true
+  })
+  let optionflag = true;
+
+  let burgermenu = document.getElementById("burgermenu")
+  burgermenu.addEventListener("click",function(){
+
+   if(optionflag){
+    var option = document.getElementById("optionnav")
+    option.style.display = "block"
+    option.style.display = "flex"
+    option.style.flexDirection = "column"
+    
+    optionflag = false
+    
+   }
+   else{
+    var option = document.getElementById("optionnav")
+    option.style.display = "none"
+    optionflag = true;
+  
+   }
+  })
+
+  
+
+
+
+
+</script>
+
+<!-- <style>
+   @media all and (min-width:1500px) and (max-width:2500px){
+      #optionnav{
+        display: inline;
+       grid-template-rows: repeat(1,1fr);
+        width: 90%;
+      
+        border: 1px solid red;
+      }
+      #optionnav>div{
+        display: grid;
+       grid-template-rows: repeat(1,1fr);
+        width: 90%;
+        
+        border: 1px solid green;
+      }
+      nav{
+        display: flex;
+      }
+    }
+</style> -->
+<style>
+   @media all and (min-width:100px) and (max-width:1500px){
+    .maindrop{
+      width: 200px;
+    }
+    
+              .maindrop{
+                margin-top: auto;
+            
+              background-color: white;
+              margin-bottom: 20px;
+                display: flex;
+               justify-content: flex-start;
+                position:fixed;
+                width: 99%;
+                top: 90px;
+                left:0;
+                z-index: index -1;
+                transition: .6s;
+                height: 600px;
+                padding-left: 0px;
+                
+              }
+              .maindrop>div{
+               margin-left: 10px;
+              }
+              .maindrop>div{
+               margin-left: 10px;
+              }
+              #video video{
+                height: 700px;
+              }
+              #midbanner{
+      display: flex;
+      flex-direction: column;
+     margin: 0px;
+     /* margin-top: 380px; */
+     }
+     nav{
+      margin: 0px;
+      padding: 0px;
+      height: 0px;
+     }
+     .hro{
+      height: auto;
+     }
+              /* .hro{
+                border: 1px yellow;
+             
+              } */
+              #search{
+                display: none;
+              }
+              #optionnav>div{
+        display: block;
+      }
+              #burgermenu{
+              display: block;
+            }
+            }
+</style>
