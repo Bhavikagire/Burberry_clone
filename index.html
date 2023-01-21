@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -536,7 +537,7 @@ padding: 0px;
 
 
           <div class="dropdown maindrop" >
-            <li class="dropbtn nav-list "><b>Gifts</b></li>
+            <li class="dropbtn nav-list " id="giftpage"><b>Gifts</b></li>
             <div class="dropdown-content">
               <div>
                 <a href="#">
@@ -580,7 +581,7 @@ padding: 0px;
 
 
           <div class="dropdown">
-            <li class="dropbtn nav-list">New in</li>
+            <li class="dropbtn nav-list" id="newinpage">New in</li>
             <div class="dropdown-content">
 
 
@@ -1033,7 +1034,7 @@ padding: 0px;
           <ion-icon id="admin" name="at-outline"></ion-icon>
              
 
-          <ion-icon name="bag-outline"></ion-icon>
+          <ion-icon id="cardicon" name="bag-outline"></ion-icon>
           <ion-icon  id="burgermenu" name="menu-outline"></ion-icon>
           <style>
             #burgermenu{
@@ -1271,7 +1272,34 @@ padding: 0px;
 //     location.href="./loder.html"
 // })
 
+document.getElementById("cardicon").addEventListener("click",function(){
+  localStorage.setItem('loder',JSON.stringify('Cart.html'))
+    location.href="./loder.html"
+})
+document.getElementById("person").addEventListener("click",function(){
+  localStorage.setItem('loder',JSON.stringify('login.html'))
+    location.href="./loder.html"
+})
+document.getElementById("giftpage").addEventListener("click",function(){
+  localStorage.setItem('loder',JSON.stringify('gift.html'))
+    location.href="./loder.html"
+})
+document.getElementById("newinpage").addEventListener("click",function(){
+  localStorage.setItem('loder',JSON.stringify('new.html'))
+    location.href="./loder.html"
+})
 
+
+
+   
+// <ion-icon id="search" name="search-outline"></ion-icon>
+//           <ion-icon id="person"  name="person-outline"></ion-icon>
+
+//           <ion-icon id="admin" name="at-outline"></ion-icon>
+             
+
+//           <ion-icon id="cardicon" name="bag-outline"></ion-icon>
+//           <ion-icon  id="burgermenu" name="menu-outline"></ion-icon>
 
 
 </script>
