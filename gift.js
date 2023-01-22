@@ -44,14 +44,11 @@ function Product(data) {
 }
 
 
-if (localStorage.getItem("cart") === null) {
-  localStorage.setItem("cart", JSON.stringify([]));
-}
-let cart = JSON.parse(localStorage.getItem("cart"));
-let bas = document.getElementById("product-dom");
-bas.innerText = cart.length + " Items";
 
 function addToCart(p) {
 cart_data.push(p)
 localStorage.setItem("cart",JSON.stringify(cart_data))
+
+alert ("added to cart")
 }
+ 
