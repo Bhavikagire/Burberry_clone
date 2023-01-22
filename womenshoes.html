@@ -8,6 +8,498 @@
     <title>Women's Shoes</title>
     <link rel="stylesheet" href="womenshoes.css">
 </head>
+<style>
+    * {
+      margin: auto;
+      padding: 0;
+    }
+
+    body {
+      background-color: white;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    #top {
+      background-color: black;
+      color: white;
+      height: 57px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 0px;
+    }
+
+    /* -----------------------navbarstyle starts from here--------------------------------------------- */
+
+    nav {
+      display: flex;
+      background-color: transparent;
+      font-size: larger;
+      font-stretch: semi-condensed;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      display: inline;
+    }
+
+    #optionnav {
+      display: flex;
+      margin-top: 36px;
+    }
+
+    #icon {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    ion-icon {
+      font-size: 34px;
+      padding: 30px;
+    }
+
+    #logobluberry img {
+      width: 250px;
+      margin-top: 20px;
+    }
+
+    .dropbtn {
+      background-color: transparent;
+      color: black;
+      padding: 16px;
+      font-size: 25px;
+      border: none;
+
+
+      height: 100%;
+
+      display: flex;
+      margin-bottom: 10px;
+      color: inherit;
+      cursor: pointer;
+
+      line-height: 20px;
+      text-transform: uppercase;
+      padding: 30px;
+      display: inline;
+
+      font-family: sans-serif;
+      /* position: relative; */
+      list-style: none;
+      font-weight: bold;
+      font-size: 22px;
+
+
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-top: 28px;
+
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #F1F1F1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      margin-top: 10px;
+      padding-bottom: 20px;
+    }
+
+    .hro {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .flex {
+      display: flex;
+      margin: 20px;
+    }
+
+    .firstpart_of_drop {
+      margin-top: 10px;
+    }
+
+    nav {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: flex;
+    }
+
+    nav:hover {
+      background-color: white;
+    }
+
+    .nav-list {
+      font-weight: bold;
+
+    }
+   
+
+
+
+    #apendinput input {
+      width: 900px;
+      height: 100px;
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+      margin: 0px;
+      font-size: 23px;
+      padding-left: 35px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+
+    #video {
+      margin: auto;
+      margin-top: 0%;
+      width: 100%;
+     
+    }
+
+    #video video {
+      width: 99%;
+margin: 0px;
+padding: 0px;
+
+      margin-left: 9px;
+      margin-bottom: 0px;
+
+    }
+
+
+    #midbanner {
+      display: flex;
+     
+      margin: 0px;
+      padding: 0px;
+     
+    }
+
+    #midbanner div {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    #midbanner video {
+      width: 100%;
+      height: 102%;
+    }
+
+    #midbanner img {
+      width: 100%;
+      height: 640px;
+    }
+
+    .centertext {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .centertext p {
+      margin: 45px;
+      font-family: 'Styrene', Helvetica, Arial, sans-serif;
+      cursor: pointer;
+      color: inherit;
+      font-stretch: extra-expanded;
+      font-size: 30px;
+      font-weight: 550;
+    }
+
+    /* 
+    #rabbitvideo video {
+
+
+
+    #footdiv {
+      display: flex;
+    }
+
+    /* body{
+  background-color: aqua;
+} */
+  #register{
+    display: none;
+  }
+#person:hover #register{
+    display: block;
+  }
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+      width: 600px;
+      margin-top: 25px;
+      text-align: left;
+      padding-left: 60px;
+      padding-top: 20px;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: none;
+      text-decoration: underline;
+    }
+
+    .dropbtn:hover body {
+      background-color: red;
+    }
+
+
+    #footdiv {
+      font-family: 'Styrene', Helvetica, Arial, sans-serif;
+    }
+
+    #footdiv>div {
+      width: 30%;
+      margin: 30px 50px 20px;
+      padding: 20px;
+      font-size: 15px;
+
+    }
+
+    .foottext:hover {
+      color: gray;
+    }
+
+    footer pre {
+      font-size: 18px;
+    }
+
+    #footdiv>div>p:hover,
+    h3:hover {
+
+      color: gray;
+    }
+
+    .foottext {
+      margin: 10px;
+      margin-bottom: 30px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .us_language_ship p {
+      color: gray;
+      font-size: 17px;
+
+    }
+
+    .us_language_ship p:hover {
+      color: rgb(51, 47, 47);
+
+    }
+
+    .us_language_ship {
+      margin-bottom: 35px;
+    }
+
+    .scarimg {
+      position: relative;
+      font-family: 'Styrene', Helvetica, Arial, sans-serif;
+
+    }
+
+    .scarimg img {
+      width: 100%;
+      display: block;
+    }
+
+    .SCARVERS {
+      position: absolute;
+      top: 20px;
+      left: 15px;
+      font-size: 20px;
+    }
+
+
+    .footsummary {
+      font-size: 18px;
+      margin: 20px;
+      margin-left: 30px;
+      color: rgb(59, 58, 58);
+    }
+
+    #footsign {
+      margin-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    #footsign+p {
+      color: rgb(59, 58, 58);
+    }
+
+    #inputfooter {
+      border: none;
+      margin-top: 10px;
+      padding: 15px;
+      width: 88%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+      font-size: 20px;
+    }
+
+    #bottompara {
+      margin: 20px 80px 10px;
+      color: gray;
+    }
+
+    #bottompara span {
+      text-decoration: underline black;
+
+    }
+   
+    
+    @media all and (min-width:100px) and (max-width:1500px){
+      #optionnav{
+        display: none;
+      }
+     #midbanner{
+      display: flex;
+      flex-direction: column;
+     margin: 0px;
+     
+     }
+     nav{
+      margin: 0px;
+      padding: 0px;
+      height: 0px;
+     }
+     .hro{
+      height: auto;
+     }
+     #video{
+      padding-bottom: 0px;
+     
+      margin: 0px;
+      padding: 0px;
+     }
+     #video video{
+      padding-bottom: 0px;
+     
+      height: auto;
+      margin: 0px;
+      height: 100%;
+     }
+     .centertext p{
+      font-size: 20px;
+     }
+     #rabbitvideo video{
+      width: 100%;
+     
+      height: 100%;
+     }
+     #footdiv{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      
+     }
+     #footdiv>div{
+    
+    margin: 10px;
+    width: 80%;
+     }
+     #burgermenu{
+      display: block;
+    }
+    }
+    /* @media all and (min-width:1001px) and (max-width:2500px){
+     
+      .maindrop{
+                margin-top: auto;
+              border: 1px solid red;
+              background-color: white;
+              margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+               justify-content: flex-start;
+                position:fixed;
+                width: 99%;
+                top: 90px;
+                left:0;
+                z-index: index -1;
+                transition: .6s;
+                height: 650px;
+
+              }
+              #video video{
+                height: 700px;
+              }
+      .hro{
+      height: auto;
+     }
+     #midbanner{
+      display: flex;
+      flex-direction: column;
+     margin: 0px;
+     
+      height: 50%;
+     }
+     #video{
+      padding-bottom: 0px;
+      border: 1px solid red;
+      margin: 0px;
+     }
+     #video video{
+      padding-bottom: 0px;
+      border: 1px solid blue;
+      height: auto;
+      margin: 0px;
+      height: 100%;
+     }
+     .centertext p{
+      font-size: 20px;
+     }
+     #rabbitvideo video{
+      width: 100%;
+    
+      height: 100%;
+     }
+     #footdiv{
+      display: flex;
+      flex-direction: column;
+     }
+    
+      #footdiv{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+     }
+     #burgermenu{
+    display: block;
+  }
+  #footdiv>div{
+  
+    margin: 10px;
+    width: 80%;
+     }
+    } */
+ 
+   
+    
+    
+  </style>
 <body>
     <div class="heading">
         <h1>WOMEN’S SHOES</h1>
@@ -96,7 +588,92 @@
 </div>
 
 <hr>
+<!-- footer -->
 
+<footer>
+    <hr>
+    <div id="footdiv" class="flex">
+      <div>
+        <h3 id="footsign">SIGN UP</h3>
+        <p class="foottext">Sign up below for updates about the world of Burberry, including
+          collection launches and early access to limited-edition products and collaborations.</p>
+        <input id="inputfooter" class="foottext" type="email" placeholder="Email">
+        <hr>
+      </div>
+      <div>
+        <p class="foottext">STORE LOCATOR
+
+        </p>
+        <p class="foottext">
+          DOWNLOAD OUR APP
+        </p>
+        <p class="foottext">BOOK AN APPOINTMENT</p>
+      </div>
+      <div>
+        <details>
+          <summary class="foottext">CUSTOMER SERVICE</summary>
+          <summary class="footsummary">Contact Us</summary>
+          <summary class="footsummary">Shipping</summary>
+          <summary class="footsummary">Ordering & Payment</summary>
+          <summary class="footsummary">Returns</summary>
+          <summary class="footsummary">Burberry Services</summary>
+        </details>
+        <details>
+          <summary class="foottext">LEGAL & COOKIES </summary>
+          <summary class="footsummary">Terms & Conditions</summary>
+          <summary class="footsummary">Burberry x 4Gift – Terms & Conditions</summary>
+          <summary class="footsummary">Privacy Policy</summary>
+          <summary class="footsummary">Cookie Policy</summary>
+          <summary class="footsummary">Accessibility Statement</summary>
+          <summary class="footsummary">4Gift FAQ</summary>
+          <summary class="footsummary">Japan only- SCTL indications</summary>
+          <summary class="footsummary">Transparency in the Supply Chain and Modern Slavery Statements</summary>
+          <summary class="footsummary">Do not sell my personal information</summary>
+        </details>
+
+        <details>
+          <summary class="foottext">FOLLOW US </summary>
+          <summary class="footsummary">Facebook</summary>
+          <summary class="footsummary">Twitter</summary>
+          <summary class="footsummary">Instagram</summary>
+
+
+
+        </details>
+        <details>
+          <summary class="foottext">OUR COMPANY </summary>
+          <summary class="footsummary">Our History</summary>
+          <summary class="footsummary">Burberry Group Plc</summary>
+          <summary class="footsummary">careers</summary>
+          <summary class="footsummary">Corporate Responsibility</summary>
+          <summary class="footsummary">Site Map</summary>
+          <summary class="footsummary">Sustainability</summary>
+
+        </details>
+
+      </div>
+      <div>
+        <div class="us_language_ship">
+          <h3 class="foottext">LANGUAGE</h3>
+          <p class="foottext"> English</p>
+        </div>
+
+        <div class="us_language_ship">
+          <h3 class="foottext"> SHIPPING TO</h3>
+          <p class="foottext">United States ($)</p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <p id="bottompara">
+      If you are using a screen-reader and are having problems using this website, please call <span>+1 877 217
+        4085</span> or <span>contact us</span> for assistance.
+    </p>
+
+  </footer>
+
+<!-- footer -->
 </body>
 </html>
 <script src="./womenshoes.js"></script>

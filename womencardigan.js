@@ -77,7 +77,10 @@ function displaydataofpro(out) {
     document.querySelector(".product_card").innerHTML = "";
     out.forEach((elem) => {
       let div = document.createElement("div");
-
+      div.addEventListener('click',()=>{
+        localStorage.setItem("decData",JSON.stringify({...elem,qty:1}))
+        window.location.href="./des.html"
+      })
 
 
       let productimg = document.createElement("img");
@@ -111,7 +114,10 @@ function displaydataofpro(out) {
     out.forEach((elem) => {
       let div = document.createElement("div");
 
-
+      div.addEventListener('click',()=>{
+        localStorage.setItem("decData",JSON.stringify({...elem,qty:1}))
+        window.location.href="./des.html"
+      })
 
       let productimg = document.createElement("img");
       productimg.setAttribute("src", elem.images[0]      );
@@ -141,7 +147,10 @@ function displaydataofshirt(out) {
     document.querySelector(".shirtdata").innerHTML = "";
     out.forEach((elem) => {
       let div = document.createElement("div");
-
+      div.addEventListener('click',()=>{
+        localStorage.setItem("decData",JSON.stringify({...elem,qty:1}))
+        window.location.href="./des.html"
+      })
 
 
       let productimg = document.createElement("img");
@@ -154,7 +163,10 @@ function displaydataofshirt(out) {
       let price = document.createElement("h4");
       price.innerText = elem.price;
 
-
+      div.addEventListener('click',()=>{
+        localStorage.setItem("decData",JSON.stringify({...elem,qty:1}))
+        window.location.href="./des.html"
+      })
 
 
 
@@ -171,7 +183,10 @@ function displaydataofshirt(out) {
     document.querySelector(".bagsdata").innerHTML = "";
     out.forEach((elem) => {
       let div = document.createElement("div");
-
+      div.addEventListener('click',()=>{
+        localStorage.setItem("decData",JSON.stringify({...elem,qty:1}))
+        window.location.href="./des.html"
+      })
 
 
       let productimg = document.createElement("img");
