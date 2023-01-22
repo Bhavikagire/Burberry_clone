@@ -78,7 +78,10 @@ function displaydataofpro(out) {
   out.forEach((elem) => {
     let div = document.createElement("div");
 
-
+    div.addEventListener('click',()=>{
+      localStorage.setItem("decData",JSON.stringify({...elem,qty:1}))
+      window.location.href="./des.html"
+    })
 
     let productimg = document.createElement("img");
     productimg.setAttribute("src", elem.images[0]      );
@@ -111,7 +114,10 @@ function displaydataofskirts(out) {
   out.forEach((elem) => {
     let div = document.createElement("div");
 
-
+    div.addEventListener('click',()=>{
+      localStorage.setItem("decData",JSON.stringify({...elem,qty:1}))
+      window.location.href="./des.html"
+    })
 
     let productimg = document.createElement("img");
     productimg.setAttribute("src", elem.images[0]      );
@@ -142,7 +148,10 @@ function displaydataofshirt(out) {
   out.forEach((elem) => {
     let div = document.createElement("div");
 
-
+    div.addEventListener('click',()=>{
+      localStorage.setItem("decData",JSON.stringify({...elem,qty:1}))
+      window.location.href="./des.html"
+    })
 
     let productimg = document.createElement("img");
     productimg.setAttribute("src", elem.images[0]      );
@@ -155,7 +164,10 @@ function displaydataofshirt(out) {
     price.innerText = elem.price;
 
 
-
+    div.addEventListener('click',()=>{
+      localStorage.setItem("decData",JSON.stringify({...elem,qty:1}))
+      window.location.href="./des.html"
+    })
 
 
     div.append(productimg,title,price)
@@ -171,7 +183,10 @@ function displaydataofbags(out) {
   document.querySelector(".bagsdata").innerHTML = "";
   out.forEach((elem) => {
     let div = document.createElement("div");
-
+    div.addEventListener('click',()=>{
+      localStorage.setItem("decData",JSON.stringify({...elem,qty:1}))
+      window.location.href="./des.html"
+    })
 
 
     let productimg = document.createElement("img");
