@@ -27,10 +27,12 @@ document.getElementById('checkot').addEventListener('click',()=>{
     if(+promt === gotp){
         let comf =  confirm(`Confirm your Order! of $${globaltotal}`)
         if(comf){
-            alert('Your order will be dilvered With in 4 Days')
+            
+            post(cartdata)
             localStorage.setItem('orderdItems',JSON.stringify(cartdata))
             localStorage.setItem('cart',JSON.stringify(empty))
             location.reload()
+            alert('Your order will be dilvered With in 4 Days')
         }
     }
 })
@@ -49,4 +51,26 @@ function priceDom(data){
     globaltotal = total
     document.getElementById('total').innerText=total
     document.getElementById('tota').innerText=total
+}
+
+function post(data){
+    let obj={
+        user: JSON.parse(localStorage.getItem('user')),
+        order : data
+    }
+    fetch('https://bb-nwfw.onrender.com/order_details',{
+        method:'POST',
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(obj)
+    })
+    .then((res)=> res.json())
+    .then((data)=>{
+        console.log(data);
+    })
+    .catch((err)=>{
+        console.log(err);
+        alert("some errer occured please try after some time!! ")
+    })
 }

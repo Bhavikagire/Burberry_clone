@@ -49,7 +49,9 @@ document.getElementById('sginin').addEventListener('click',()=>{
     let verify= verifyUser(data);
     if(verify){
       alert("ok done")
-      window.location.href="./index.html"
+      localStorage.setItem('user',JSON.stringify(data.fname));
+      localStorage.setItem('loder',JSON.stringify('index.html'))
+       location.href="./loder.html"
     }else{
       alert('wrong cred!................')
     }
