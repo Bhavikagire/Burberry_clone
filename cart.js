@@ -48,6 +48,14 @@ function renderDom(data){
     })
 }
 
+
+document.getElementById('checkout').addEventListener('click',()=>{
+    console.log('yes');
+    localStorage.setItem('loder',JSON.stringify('payment.html'))
+    location.href="./loder.html"
+})
+
+
 function priceDom(data){
     let total=0;
     let count=0
