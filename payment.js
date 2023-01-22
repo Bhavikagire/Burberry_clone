@@ -8,7 +8,7 @@ document.getElementById('cod').addEventListener('click',()=>{
     
     let randomnum = random()
     document.getElementById('otp').style.display="block";
-    document.getElementById('otp').innerText=`Your OIP is For COD Payment ${randomnum}`
+    document.getElementById('otp').innerText=`Your OTP is For COD Payment ${randomnum}`
     gotp=randomnum
 })
 
@@ -16,7 +16,7 @@ document.getElementById('online').addEventListener('click',()=>{
     
     let randomnum = random()
     document.getElementById('otp').style.display="block";
-    document.getElementById('otp').innerText=`Your OIP is For Online Payment ${randomnum}`
+    document.getElementById('otp').innerText=`Your OTP is For Online Payment ${randomnum}`
     gotp=randomnum
     
 })
