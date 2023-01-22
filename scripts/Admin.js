@@ -340,3 +340,34 @@ function textTospeech (text) {
     utternance.voice = window.speechSynthesis.getVoices()[3] ;
     speechSynthesis.speak(utternance);
 }
+
+
+
+
+// ///pie chart code....
+// var catValues = ["Men", "Women", "Gifts", "NewIn"];
+// var yValues = [40, 36, 24, 24];
+// var barColors = [
+//   "#b91d47",
+//   "#00aba9",
+//   "#2b5797",
+//   "#e8c3b9",
+//   "#1e7145"
+// ];
+
+// new Chart("myChart", {
+//   type: "pie",
+//   data: {
+//     labels: catValues,
+//     datasets: [{
+//       backgroundColor: barColors,
+//       data: yValues
+//     }]
+//   },
+//   options: {
+//     title: {
+//       display: true,
+//       text: "Products Available in 2023"
+//     }
+//   }
+// });

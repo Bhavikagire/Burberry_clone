@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/24c494a6b6.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <!-- fw20_0095 -->
     <link rel="stylesheet" href="./styles/Admin.css" />
     <link rel="stylesheet" href="./styles/modal-popup.css" />
@@ -58,6 +59,41 @@
             <p>Customers/Users</p>
           </div>
         </div>
+        <br>
+
+        <hr>
+        <canvas id="myChart" style="width:100%;max-width:600px;height:400px"></canvas>
+
+        <script>
+
+          var catValues = ["Men", "Women", "Gifts", "NewIn"];
+          var yValues = [40, 36, 24, 24];
+          var barColors = [
+            "#283287",
+            "#c10002",
+            "#ffd700",
+            "#8ba937"
+          ];
+          
+          new Chart("myChart", {
+            type: "pie",
+            data: {
+              labels: catValues,
+              datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+              }]
+            },
+            options: {
+              title: {
+                display: true,
+                text: "Products Available in 2023"
+              }
+            }
+          });
+          </script>
+          
+
       </div>
       <div id="rhs">
         <div id="navbar">
