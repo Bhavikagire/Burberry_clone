@@ -47,7 +47,7 @@ function Product(data) {
 
 function addToCart(p) {
 cart_data.push(p)
-localStorage.setItem("cart",JSON.stringify(cart_data))
+//localStorage.setItem("cart",JSON.stringify(cart_data))
 
 alert ("added to cart")
 }
